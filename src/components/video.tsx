@@ -36,7 +36,7 @@ const VideoSection = () => {
           <div className="w-full mx-auto overflow-hidden rounded-lg shadow-2xl mt-8">
             <video
               className="w-full"
-              src={videoSrc}
+              src="https://epwimagem.s3.us-east-2.amazonaws.com/products-variants/Aperte+o+Play!+NoGi.mp4"
               autoPlay
               controls
               loop
