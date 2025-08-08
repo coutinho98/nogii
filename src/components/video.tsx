@@ -1,6 +1,4 @@
-import videoSrc from '../assets/videos/Aperte o Play! NoGi.mp4';
-
-const VideoSection = () => {
+  const VideoSection = () => {
   return (
     <div className="bg-[#090A0B] text-white py-10">
       <div className="container mx-auto px-6">

@@ -1,6 +1,3 @@
-// src/components/PricingSection.jsx
-import React from 'react';
-
 const PricingSection = () => {
   return (
     <div className="bg-[#090A0B] text-white py-10 md:py-20">
