@@ -31,7 +31,7 @@ const PricingSection = () => {
           </p>
         </div>
 
-        <div className="bg-[#111] p-8 rounded-xl border border-gray-800 shadow-lg max-w-sm w-full flex-1 md:w-1/2">
+        <div className="bg-[#111] p-8 rounded-xl  shadow-lg max-w-sm w-full flex-1 md:w-1/2">
           <ul className="space-y-3 text-white text-sm md:text-base">
             <li className="flex items-center">
               <TrophyIcon className="h-5 w-5 text-yellow-300 mr-2" />

@@ -17,8 +17,9 @@ function App() {
       <VideoSection />
       <PainPointsSection />
       <BenefitsSection />
-      <InstructorBioSection />
       <TestimonialSection />
+      
+      <InstructorBioSection />
       <CourseModulesSection />
       <PricingSection />
       <WhatsApp />

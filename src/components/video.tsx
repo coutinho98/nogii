@@ -17,7 +17,7 @@ const VideoSection = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="w-full mx-auto overflow-hidden rounded-lg shadow-2xl mt-8">
             <video
               className="w-full"
@@ -32,7 +32,7 @@ const VideoSection = () => {
               Seu navegador não suporta a tag de vídeo.
             </video>
           </div>
-          
+
           <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 w-full max-w-xs md:max-w-none mx-auto mt-6">
             <button
               className="w-full md:min-w-[180px] cursor-pointer bg-yellow-500 text-gray-900 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:bg-yellow-600"

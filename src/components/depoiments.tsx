@@ -19,8 +19,8 @@ const TestimonialSection = () => {
   return (
     <section className="bg-[#090A0B] text-white py-10">
       <div className="container mx-auto px-6 max-w-7xl overflow-hidden relative">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
-          O que estão dizendo do curso
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">
+          Esses são alguns dos nossos alunos que começaram a derrubar seus oponentes
         </h2>
 
         <motion.div

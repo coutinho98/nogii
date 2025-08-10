@@ -6,7 +6,7 @@ const PainPointsSection = () => {
                     <div className="max-w-5xl mx-auto">
 
                         <div className="text-center md:text-left">
-                            <h2 className="font-montserrat text-3xl md:text-4xl font-extrabold leading-tight">
+                            <h2 className="font-montserrat text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">
                                 Se sentindo frustrado no tatame?
                             </h2>
                         </div>
@@ -21,7 +21,7 @@ const PainPointsSection = () => {
                             ].map((text, index) => (
                                 <div
                                     key={index}
-                                    className="bg-[#1A1D1F] border border-gray-700 p-8 text-left rounded-lg shadow-lg"
+                                    className="bg-[#1A1D1F]  p-8 text-left rounded-lg shadow-lg"
                                 >
                                     <p className="text-gray-200">{text}</p>
                                 </div>
@@ -31,7 +31,7 @@ const PainPointsSection = () => {
 
                     <div className="max-w-5xl mx-auto mt-10 text-center">
                         <p className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent px-4">
-                            Se você se sente assim, calma, eu sei como é passar por tudo isso e eu sei como resolver o seu problema.
+                            Reconhece essa situação? Eu vivi isso na pele por anos, até descobrir o que realmente funciona.
                         </p>
                     </div>
                 </div>

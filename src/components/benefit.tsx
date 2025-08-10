@@ -17,14 +17,14 @@ const BenefitsSection = () => {
                     </p>
 
                     <div className="text-center md:text-left mt-10 md:mt-10">
-                        <h2 className="font-montserrat text-3xl md:text-4xl font-extrabold leading-tight">
+                        <h2 className="font-montserrat text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-yellow-200 to-orange-400 bg-clip-text text-transparent">
                             Aqui você vai aprender
                         </h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 w-full">
 
-                        <div className="border border-[#1A1D1F] p-8 text-left">
+                        <div className="bg-[#1A1D1F] rounded-lg p-8 text-left">
                             <div className="flex items-start">
                                 <ArrowsRightLeftIcon className="h-6 w-6 mr-4 mt-1" />
                                 <p className="text-white">
@@ -33,7 +33,7 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        <div className="border border-[#1A1D1F] p-8 text-left">
+                        <div className="bg-[#1A1D1F] rounded-lg p-8 text-left">
                             <div className="flex items-start">
                                 <ArrowDownOnSquareStackIcon className="h-6 w-6 mr-4 mt-1" />
                                 <p className="text-white">
@@ -42,7 +42,7 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        <div className="border border-[#1A1D1F] p-8 text-left">
+                        <div className="bg-[#1A1D1F] rounded-lg p-8 text-left">
                             <div className="flex items-start">
                                 <FireIcon className="h-6 w-6 mr-4 mt-1" />
                                 <p className="text-white">
@@ -51,7 +51,7 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        <div className="border border-[#1A1D1F] p-8 text-left">
+                        <div className="bg-[#1A1D1F] rounded-lg p-8 text-left">
                             <div className="flex items-start">
                                 <FireIcon className="h-6 w-6 mr-4 mt-1" />
                                 <p className="text-white">
@@ -60,7 +60,7 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        <div className="border border-[#1A1D1F] p-8 text-left">
+                        <div className="bg-[#1A1D1F] rounded-lg p-8 text-left">
                             <div className="flex items-start">
                                 <UserGroupIcon className="h-6 w-6 mr-4 mt-1" />
                                 <p className="text-white">
@@ -69,7 +69,7 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        <div className="border border-[#1A1D1F] p-8 text-left">
+                        <div className="bg-[#1A1D1F] border border-gray-700 p-8 text-left">
                             <div className="flex items-start">
                                 <TrophyIcon className="h-6 w-6 mr-4 mt-1" />
                                 <p className="text-white">
