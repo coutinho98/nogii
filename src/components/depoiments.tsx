@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, animate } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useEffect, useRef } from 'react';
 
 const testimonials = [
   {
@@ -14,7 +15,42 @@ const testimonials = [
 ];
 
 const TestimonialSection = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const x = useMotionValue(0);
   const duplicatedTestimonials = [...testimonials, ...testimonials];
+
+  const animationControls = useRef<any>(null);
+
+  const startAnimation = () => {
+    if (containerRef.current) {
+      const totalWidth = containerRef.current.scrollWidth;
+      const scrollDuration = 30;
+      
+      animationControls.current = animate(x, -totalWidth / 2, {
+        ease: 'linear',
+        duration: scrollDuration,
+        repeat: Infinity,
+        repeatType: 'loop',
+      });
+    }
+  };
+
+  useEffect(() => {
+    startAnimation();
+    
+    return () => {
+      if (animationControls.current) {
+        animationControls.current.stop();
+      }
+    };
+  }, [x]);
+
+  const handleDragEnd = () => {
+    if (animationControls.current) {
+      animationControls.current.stop();
+    }
+    startAnimation();
+  };
 
   return (
     <section className="bg-[#090A0B] text-white py-10">
@@ -23,36 +59,37 @@ const TestimonialSection = () => {
           Esses são alguns dos nossos alunos que começaram a derrubar seus oponentes
         </h2>
 
-        <motion.div
-          className="flex gap-8"
-          animate={{ x: ['0%', '-100%'] }}
-          transition={{
-            ease: 'linear',
-            duration: 30,
-            repeat: Infinity,
-          }}
-        >
-          {duplicatedTestimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-[#111] p-4 shadow-sm rounded-2xl flex-shrink-0 relative"
-              style={{ width: 'clamp(300px, 40vw, 450px)' }}
-            >
-              <div className="flex-grow">
-                <p className="text-gray-300 italic mt-4 text-sm sm:text-base mb-4">
-                  "{testimonial.text}"
-                </p>
-                <p className="font-bold text-sm sm:text-lg text-yellow-500">
-                </p>
+        <div className="relative overflow-hidden w-full">
+          <motion.div
+            ref={containerRef}
+            className="flex gap-8 cursor-grab"
+            style={{ x }}
+            drag="x"
+            dragConstraints={{ left: -1000, right: 0 }} 
+            onDragEnd={handleDragEnd}
+          >
+            {duplicatedTestimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="bg-[#111] p-4 shadow-sm rounded-2xl flex-shrink-0 relative"
+                style={{ width: 'clamp(300px, 40vw, 450px)' }}
+              >
+                <div className="flex-grow">
+                  <p className="text-gray-300 italic mt-4 text-sm sm:text-base mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <p className="font-bold text-sm sm:text-lg text-yellow-500">
+                  </p>
+                </div>
+                <div className="absolute top-3 right-3 flex">
+                  {[...Array(5)].map((_, i) => (
+                    <StarIcon key={i} className="h-4 w-4 text-yellow-500" />
+                  ))}
+                </div>
               </div>
-              <div className="absolute top-3 right-3 flex">
-                {[...Array(5)].map((_, i) => (
-                  <StarIcon key={i} className="h-4 w-4 text-yellow-500" />
-                ))}
-              </div>
-            </div>
-          ))}
-        </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );
