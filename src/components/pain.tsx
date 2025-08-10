@@ -1,6 +1,6 @@
 const PainPointsSection = () => {
     return (
-        <div className="relative w-full">
+        <section className="relative w-full">
             <div className="bg-[#090A0B] text-white py-10 w-full relative z-10">
                 <div className="w-full max-w-none px-4 sm:px-6 lg:px-8">
                     <div className="max-w-5xl mx-auto">
@@ -36,7 +36,7 @@ const PainPointsSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

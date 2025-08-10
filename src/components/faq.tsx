@@ -30,9 +30,26 @@ const FaqSection = () => {
   const toggleAnswer = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+  
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
 
   return (
     <section className="bg-[#090A0B] text-white py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-start">
           

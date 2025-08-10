@@ -11,7 +11,7 @@ const Footer = () => {
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center space-x-4">
+        <nav className="flex flex-wrap justify-center space-x-4">
           <Link
             to="/legal#politica-privacidade"
             className="text-sm hover:text-white transition-colors duration-300"
@@ -30,7 +30,7 @@ const Footer = () => {
           >
             Termos de Serviço
           </Link>
-        </div>
+        </nav>
 
       </div>
     </footer>

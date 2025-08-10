@@ -1,6 +1,6 @@
 const InstructorBioSection = () => {
   return (
-    <div className="bg-[#090A0B] text-white py-10 md:py-40">
+    <section className="bg-[#090A0B] text-white py-10 md:py-40">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           
@@ -40,7 +40,7 @@ const InstructorBioSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

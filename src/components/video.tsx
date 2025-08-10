@@ -1,13 +1,13 @@
 const VideoSection = () => {
   return (
-    <div className="bg-[#090A0B] text-white py-10">
+    <main className="bg-[#090A0B] text-white py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center justify-between mb-10">
             <div className="text-left w-full">
-              <h2 className="font-montserrat font-bold text-4xl md:text-5xl leading-tight bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
+              <h1 className="font-montserrat font-bold text-4xl md:text-5xl leading-tight bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
                 Torne-se o lutador que sempre derruba!
-              </h2>
+              </h1>
             </div>
             <div className="w-full mt-2">
               <p className="text-lg text-left md:text-xl text-gray-300 font-montserrat font-normal leading-relaxed">
@@ -49,7 +49,7 @@ const VideoSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
