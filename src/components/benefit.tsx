@@ -24,7 +24,6 @@ const BenefitsSection = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 w-full">
 
-                        {/* Card 1 - Dominar a luta */}
                         <div className="border border-[#1A1D1F] p-8 text-left">
                             <div className="flex items-start">
                                 <ArrowsRightLeftIcon className="h-6 w-6 mr-4 mt-1" />
@@ -34,7 +33,6 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        {/* Card 2 - Derrubar */}
                         <div className="border border-[#1A1D1F] p-8 text-left">
                             <div className="flex items-start">
                                 <ArrowDownOnSquareStackIcon className="h-6 w-6 mr-4 mt-1" />
@@ -44,7 +42,6 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        {/* Card 3 - Controlar */}
                         <div className="border border-[#1A1D1F] p-8 text-left">
                             <div className="flex items-start">
                                 <FireIcon className="h-6 w-6 mr-4 mt-1" />
@@ -54,7 +51,6 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        {/* Card 4 - Impor seu ritmo */}
                         <div className="border border-[#1A1D1F] p-8 text-left">
                             <div className="flex items-start">
                                 <FireIcon className="h-6 w-6 mr-4 mt-1" />
@@ -64,7 +60,6 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        {/* Card 5 - Ganhar respeito */}
                         <div className="border border-[#1A1D1F] p-8 text-left">
                             <div className="flex items-start">
                                 <UserGroupIcon className="h-6 w-6 mr-4 mt-1" />
@@ -74,7 +69,6 @@ const BenefitsSection = () => {
                             </div>
                         </div>
 
-                        {/* Card 6 - Competir */}
                         <div className="border border-[#1A1D1F] p-8 text-left">
                             <div className="flex items-start">
                                 <TrophyIcon className="h-6 w-6 mr-4 mt-1" />

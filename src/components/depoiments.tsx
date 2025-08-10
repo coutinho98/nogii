@@ -1,0 +1,61 @@
+import { motion } from 'framer-motion';
+import { StarIcon } from '@heroicons/react/24/solid';
+
+const testimonials = [
+  {
+    text: "Vlw professor!! O curso está tão bem explicado que não deixa dúvidas. Meus alunos estão muito empolgados, estão desenvolvendo em pouco tempo o que muitos levariam anos. Eu é que só tenho a agradecer!!! Depois vamos combinar para vc fazer um seminário aqui na cidade e região.",
+  },
+  {
+    text: "Muito bom irmão. Você faz a parada ser muito simples ❤️. Os verdadeiros gênios (professores) pegam coisas complexas e tornam simples ❤️. Parabéns.",
+  },
+  {
+    text: "Parabéns pela iniciativa do curso online, muitas cidades pequenas como a minha não tem especialistas na área! Mas com o conhecimento de jiu-jitsu um pouco avançado, já conseguimos aprender através de vídeos e se auto corrigir!",
+  },
+];
+
+const TestimonialSection = () => {
+  const duplicatedTestimonials = [...testimonials, ...testimonials];
+
+  return (
+    <section className="bg-[#090A0B] text-white py-10">
+      <div className="container mx-auto px-6 max-w-7xl overflow-hidden relative">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
+          O que estão dizendo do curso
+        </h2>
+
+        <motion.div
+          className="flex gap-8"
+          animate={{ x: ['0%', '-100%'] }}
+          transition={{
+            ease: 'linear',
+            duration: 30,
+            repeat: Infinity,
+          }}
+        >
+          {duplicatedTestimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-[#111] p-4 shadow-sm rounded-2xl flex-shrink-0 relative"
+              style={{ width: 'clamp(300px, 40vw, 450px)' }}
+            >
+              <div className="flex-grow">
+                <p className="text-gray-300 italic mt-4 text-sm sm:text-base mb-4">
+                  "{testimonial.text}"
+                </p>
+                <p className="font-bold text-sm sm:text-lg text-yellow-500">
+                </p>
+              </div>
+              <div className="absolute top-3 right-3 flex">
+                {[...Array(5)].map((_, i) => (
+                  <StarIcon key={i} className="h-4 w-4 text-yellow-500" />
+                ))}
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default TestimonialSection;

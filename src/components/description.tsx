@@ -31,7 +31,6 @@ const InstructorBioSection = () => {
             </p>
           </div>
           
-          {/* Lado Direito - Imagem do Instrutor */}
           <div className="md:w-1/2 flex justify-center">
             <img 
               src="https://wilgnersilva.com.br/wp-content/webp-express/webp-images/uploads/2025/08/WhatsApp-Image-2025-08-05-at-18.01.05-951x1024.jpeg.webp" 
