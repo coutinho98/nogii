@@ -1,11 +1,6 @@
 import { CheckBadgeIcon, ClockIcon, TrophyIcon, ShieldCheckIcon, QuestionMarkCircleIcon, ArrowPathIcon } from '@heroicons/react/24/solid';
 import { useTranslation } from 'react-i18next';
 
-interface BenefitItem {
-  icon: string;
-  text: string;
-}
-
 const benefitIcons: { [key: string]: React.ElementType } = {
   "Do básico ao avançado": TrophyIcon,
   "Acesso vitalício": ClockIcon,

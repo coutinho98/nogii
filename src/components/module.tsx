@@ -1,13 +1,5 @@
 import { useTranslation } from 'react-i18next';
 
-interface CourseModuleItem {
-    title: string;
-    description: string;
-    image: string;
-    why_it_works?: string;
-    why_it_works_description?: string;
-}
-
 const CourseModulesSection = () => {
     const { t } = useTranslation();
 
