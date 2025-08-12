@@ -8,12 +8,14 @@ import WhatsApp from './components/whatsapp'
 import FaqSection from './components/faq'
 import TestimonialSection from './components/depoiments'
 import Footer from './components/footer'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LegalPage from './components/legal';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
+      <LanguageSwitcher /> 
       <VideoSection />
       <PainPointsSection />
       <BenefitsSection />

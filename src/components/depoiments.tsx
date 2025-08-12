@@ -1,22 +1,19 @@
 import { motion, useMotionValue, animate } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
-const testimonials = [
-  {
-    text: "Vlw professor!! O curso está tão bem explicado que não deixa dúvidas. Meus alunos estão muito empolgados, estão desenvolvendo em pouco tempo o que muitos levariam anos. Eu é que só tenho a agradecer!!! Depois vamos combinar para vc fazer um seminário aqui na cidade e região.",
-  },
-  {
-    text: "Muito bom irmão. Você faz a parada ser muito simples ❤️. Os verdadeiros gênios (professores) pegam coisas complexas e tornam simples ❤️. Parabéns.",
-  },
-  {
-    text: "Parabéns pela iniciativa do curso online, muitas cidades pequenas como a minha não tem especialistas na área! Mas com o conhecimento de jiu-jitsu um pouco avançado, já conseguimos aprender através de vídeos e se auto corrigir!",
-  },
-];
+interface TestimonialItem {
+  text: string;
+}
 
 const TestimonialSection = () => {
+  const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const x = useMotionValue(0);
+
+  // 2. Obtém a lista de depoimentos traduzidos e adiciona a tipagem
+  const testimonials = t('testimonials_section.items', { returnObjects: true }) as TestimonialItem[];
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   const animationControls = useRef<any>(null);
@@ -56,7 +53,7 @@ const TestimonialSection = () => {
     <section className="bg-[#090A0B] text-white py-10">
       <div className="container mx-auto px-6 max-w-7xl overflow-hidden relative">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">
-          Esses são alguns dos nossos alunos que começaram a derrubar seus oponentes
+          {t('testimonials_section.title')}
         </h2>
 
         <div className="relative overflow-hidden w-full">
@@ -68,7 +65,8 @@ const TestimonialSection = () => {
             dragConstraints={{ left: -1000, right: 0 }} 
             onDragEnd={handleDragEnd}
           >
-            {duplicatedTestimonials.map((testimonial, index) => (
+            {/* 3. Mapeia sobre a lista de depoimentos e usa o texto do objeto */}
+            {duplicatedTestimonials.map((testimonial: TestimonialItem, index: number) => (
               <div
                 key={index}
                 className="bg-[#111] p-4 shadow-sm rounded-2xl flex-shrink-0 relative"

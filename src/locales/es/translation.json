@@ -1,0 +1,195 @@
+{
+  "video_section": {
+    "title": "¡Conviértete en el luchador que siempre derriba!",
+    "description_part1": "Descubre cómo dominar los derribos y finalmente imponer tu juego en el jiu-jitsu con el",
+    "description_part2": "Campeón Brasileño de Lucha Libre en 2018",
+    "video_not_supported": "Tu navegador no soporta la etiqueta de vídeo.",
+    "button_machine": "Convertirse en una máquina",
+    "button_content": "Conoce el contenido"
+  },
+  "pain_points": {
+    "title": "¿Te sientes frustrado en el tatame?",
+    "points": [
+      "¿Cansado de depender solo de jalar a la guardia y nunca poder imponer tu juego?",
+      "¿Siempre por debajo, siendo dominado por oponentes más experimentados?",
+      "¿Frustrado por no poder derribar a nadie, incluso después de meses de entrenamiento?",
+      "¿Avergonzado cuando todos te miran y simplemente no puedes quitarle al tipo del pie?",
+      "¿Perdiendo peleas que podrías ganar si supieras cómo controlar la lucha de pie?"
+    ],
+    "recognition_text": "¿Reconoces esta situación? Yo la viví en carne propia durante años, hasta que descubrí lo que realmente funciona."
+  },
+  "benefits_section": {
+    "subtitle": "El único método en Brasil que convierte a los luchadores de Jiu-Jitsu en máquinas de derribos.",
+    "title": "Aquí vas a aprender",
+    "points": [
+      {
+        "title": "A dominar",
+        "text": "la lucha desde el primer contacto;"
+      },
+      {
+        "title": "A derribar",
+        "text": "a cualquier oponente con total confianza;"
+      },
+      {
+        "title": "A controlar",
+        "text": "dónde ocurre la lucha – de pie o en el suelo;"
+      },
+      {
+        "title": "A imponer",
+        "text": "tu ritmo y tu estrategia desde el principio;"
+      },
+      {
+        "title": "A ganarse el respeto",
+        "text": "de todos en la academia por tu lucha libre;"
+      },
+      {
+        "title": "A competir",
+        "text": "con una ventaja real sobre el 90% de los oponentes."
+      }
+    ]
+  },
+  "testimonials_section": {
+    "title": "Estos son algunos de nuestros estudiantes que empezaron a derribar a sus oponentes",
+    "items": [
+      {
+        "text": "¡Gracias, profesor! El curso está tan bien explicado que no deja dudas. Mis alumnos están muy emocionados, están desarrollándose en poco tiempo lo que a muchos les llevaría años. ¡Soy yo el que tiene que agradecer! Después, vamos a organizar un seminario aquí en la ciudad y la región."
+      },
+      {
+        "text": "Muy bien, hermano. Haces que las cosas sean muy simples ❤️. Los verdaderos genios (profesores) toman cosas complejas y las hacen simples ❤️. Felicidades."
+      },
+      {
+        "text": "¡Felicidades por la iniciativa del curso online, muchas ciudades pequeñas como la mía no tienen especialistas en la zona! ¡Pero con un conocimiento un poco avanzado de jiu-jitsu, ya podemos aprender a través de videos y autocorrección!"
+      }
+    ]
+  },
+  "instructor_bio": {
+    "greeting": "¡Mucho gusto! Soy",
+    "name": "Wilgner Silva",
+    "title": "Campeón brasileño en 2018",
+    "description_part1": "Soy una de las",
+    "description_highlight1": "mayores referencias en Lucha Libre Nacional.",
+    "description_part2": "Atleta",
+    "description_highlight2": "campeón nacional, nº1 de Brasil en 2018",
+    "description_part3": "y varias veces medallista nacional en la modalidad, entre otros títulos.",
+    "description_part4": "Soy",
+    "description_highlight3": "profesor de varios atletas de élite en Jiu-Jitsu",
+    "description_part5": "y enseño derribos a los líderes de las academias más grandes de Brasil.",
+    "description_part6": "Todos mis alumnos han tenido un",
+    "description_highlight4": "cambio notable",
+    "description_part7": "a través de mis enseñanzas en Lucha Olímpica.",
+    "description_part8": "La",
+    "description_highlight5": "evolución rápida y la didáctica de enseñanza",
+    "description_part9": "para los más variados tipos de alumnos son mi marca personal.",
+    "call_to_action": "¡Ven a ser parte de este equipo también!"
+  },
+  "course_modules": {
+    "title": "Siguiendo este camino es como lograron este resultado",
+    "module1": {
+      "title": "MOVIMIENTOS BÁSICOS",
+      "description": "Este módulo te enseña los derribos más efectivos de la lucha moderna con una metodología única: cada técnica se desglosa en sus componentes esenciales para garantizar una ejecución perfecta. Dominarás los dos derribos que resuelven el 80% de las situaciones - Single Leg y Double Leg - además de sus variaciones más letales y las defensas que te harán imposible de derribar."
+    },
+    "module2": {
+      "title": "ENTRADAS QUE TODO GRAPPLER DEBE SABER",
+      "description": "Dominar los derribos sin saber cómo crear oportunidades es inútil. Este módulo enseña los setups y entradas que transforman cualquier situación defensiva en una oportunidad de derribo garantizada. Aprenderás a \"ver\" aperturas donde otros solo ven guardias cerradas.",
+      "why_it_works": "Por qué funciona:",
+      "why_it_works_description": "Mientras el 90% fuerza los derribos contra oponentes preparados, tú crearás tus propias oportunidades, haciendo que tus derribos parezcan \"demasiado fáciles.\""
+    },
+    "module3": {
+      "title": "CEÑIDAS Y CLINCH",
+      "description": "Cuando la lucha se vuelve pegajosa, quien domina el clinch lo domina todo. Aprenderás las ceñidas y técnicas que hacen que los oponentes se sientan atrapados en un torno - imposibles de escapar.",
+      "why_it_works_description": "En el clinch, la técnica vence a la fuerza. Incluso siendo más pequeño, controlarás a oponentes más grandes a través de palancas y presión inteligente."
+    },
+    "module4": {
+      "title": "DEFENSAS",
+      "description": "Una defensa sólida es tu arma secreta para vencer a cualquier oponente. Aquí aprendes que es mucho más agotador atacar que defender - y cómo usar esto a tu favor. Mientras tus oponentes se agotan tratando de derribarte, tú conservas energía y esperas el momento perfecto para atacar."
+    },
+    "module5": {
+      "title": "TALADROS",
+      "description": "Conocer las técnicas es solo el principio - dominar es sobre la repetición inteligente. Este módulo te enseña los taladros específicos que graban los movimientos en tu memoria muscular hasta que se vuelven automáticos. Es la diferencia entre saber cómo hacerlo y hacerlo sin pensar."
+    },
+    "module6": {
+      "title": "BONUS",
+      "description": "Las técnicas que pocos conocen y aún menos dominan. Este módulo de bonificación revela movimientos de élite que combinan lucha libre con judo, defensas avanzadas contra finalizaciones y derribos espectaculares que dejan a los oponentes sin reacción. Son las cartas bajo la manga que convierten a los buenos luchadores en imbatibles."
+    }
+  },
+  "pricing_section": {
+    "from_price": "de",
+    "to_price": "por solo",
+    "installments_text": "12x de",
+    "or_text": "o",
+    "cash_text": "al contado",
+    "limited_offer": "Oferta exclusiva — válida por tiempo limitado",
+    "benefits_list": [
+      "De lo básico a lo avanzado",
+      "Acceso de por vida",
+      "Certificado de finalización",
+      "Garantía incondicional de 7 días",
+      "Soporte para dudas",
+      "Actualizaciones gratuitas"
+    ],
+    "button_text": "¡Quiero aprender a derribar!"
+  },
+  "whatsapp_section": {
+    "title": "¿Aún tienes dudas si el curso es para ti?",
+    "description": "Habla ahora por WhatsApp con mi equipo y aclararemos todas las dudas que aún tengas sobre el curso.",
+    "button_text": "Hablar por WhatsApp"
+  },
+  "faq_section": {
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "question": "¿Cuánto tiempo tengo de acceso?",
+        "answer": "El acceso al curso es de por vida, por lo que solo pagará una vez y podrá acceder al contenido cuando lo desee."
+      },
+      {
+        "question": "¿Hay certificado?",
+        "answer": "Sí, al finalizar todo el contenido del curso, podrá emitir un certificado."
+      },
+      {
+        "question": "¿Dónde puedo acceder al curso?",
+        "answer": "Su acceso será a través de Kiwify."
+      },
+      {
+        "question": "¿Cómo recibiré mi acceso?",
+        "answer": "Recibirá un correo electrónico a su correo electrónico registrado en el momento de la compra con toda la información de acceso."
+      },
+      {
+        "question": "¿Las clases son online?",
+        "answer": "Sí, todo el contenido del curso es 100% online."
+      }
+    ]
+  },
+  "legal_page": {
+    "title": "Políticas y Términos de Servicio",
+    "subtitle": "A continuación, encontrará información detallada sobre las políticas de privacidad, cookies y los términos de servicio.",
+    "privacy_policy": {
+      "title": "POLÍTICAS DE PRIVACIDAD",
+      "section1_title": "1. Información del Usuario",
+      "section1_p1": "1.1 Es importante que recopilemos cierta información de los usuarios de nuestros servicios para poder ofrecer un sitio web mejor y más adaptado a sus preferencias. También necesitamos informarles sobre novedades e información relevante. Por lo tanto, lea atentamente esta política y nuestros términos de uso.",
+      "section1_p2": "1.2 Garantizamos que cualquier información personal de los usuarios no será proporcionada, publicada ni comercializada bajo ninguna circunstancia. Esta información está segura con nosotros. Excepto en casos de participación del usuario en algún comentario o publicación. En este caso, el nombre, el correo electrónico y el testimonio podrán ser publicados, de acuerdo con nuestros términos de uso."
+    },
+    "cookies_policy": {
+      "title": "POLÍTICAS DE COOKIES",
+      "section1_p1": "1. Podemos utilizar la tecnología de cookies para mejorar la experiencia del usuario. Esto ayuda a identificar su IP, facilitando la navegación y personalizando la navegación. Puede bloquear el uso de cookies directamente en su navegador."
+    },
+    "terms_of_service": {
+      "title": "TÉRMINOS DE SERVICIOS",
+      "section1_title": "1. Aviso Legal",
+      "section1_p1": "1.1 Usted acepta y entiende que Wilgner Silva hace todo lo posible para evitar, pero no puede garantizar que los archivos disponibles para descargar a través de Internet estén libres de virus, gusanos, caballos de Troya u otro código que pueda manifestar propiedades contaminantes o destructivas.",
+      "section1_p2": "1.2 Usted es responsable de implementar prácticas, procedimientos y verificaciones de seguridad en sus dispositivos (computadora, smartphone, tableta, etc.) y de mantener medios externos a este y otros sitios para la reconstrucción de cualquier dato perdido. Wilgner Silva no asume ninguna responsabilidad o riesgo por su uso de Internet.",
+      "section1_p3": "1.3 El uso de este sitio es su total responsabilidad.",
+      "section1_p4": "1.4 Los contenidos de este y otros programas de Wilgner Silva no son necesariamente completos y actualizados y no deben ser utilizados para sustituir informes, declaraciones, recomendaciones de las herramientas y plataformas utilizadas en la capacitación o avisos dados por Wilgner Silva.",
+      "section1_p5": "1.5 La información obtenida al usar este sitio no es completa y no cubre todas las cuestiones, temas o hechos que puedan ser relevantes para sus objetivos.",
+      "section1_p6": "1.6 El Contenido se ofrece en la forma \"tal cual\" y no tiene ninguna garantía de resultado de ningún tipo, expresa o implícita. Wilgner Silva no garantiza que las funciones o el contenido de los programas sean continuos, libres de errores o que las fallas sean corregidas o que este sitio y los servidores que lo hacen disponible estén libres de virus u otros componentes destructivos.",
+      "section1_p7": "1.7 Wilgner Silva no garantiza ni hace ninguna representación relacionada con el uso o los resultados del uso de los contenidos de sus programas en términos de precisión, confiabilidad u otros. El contenido de los programas puede incluir imprecisiones técnicas o errores tipográficos y Wilgner Silva puede hacer cambios y mejoras en cualquier momento, sin previo aviso. Usted, y no Wilgner Silva, asume el costo de cualquier servicio, reparación o corrección necesarios en caso de cualquier pérdida o daño consecuente del uso de este programa. Wilgner Silva no ofrece ninguna garantía de que el uso de sus programas no infringirá el derecho de otro y no asume ninguna responsabilidad por errores u omisiones en el contenido. Toda la información de este programa, ya sea de naturaleza histórica o prospectiva, es válida solo para la fecha en que se publicó en el sitio y Wilgner Silva no se compromete con ninguna obligación de actualizar dicha información después de que se publica o de eliminar dicha información de este y cualquier otro sitio en caso de que no sea (o ya no sea) precisa o completa.",
+      "section2_title": "2. Limitación de responsabilidad",
+      "section2_p1": "2.1 Wilgner Silva, sus Filiales, Afiliados, Licenciantes, Proveedores de Servicio, Proveedores de Contenido, Empleados, Agentes, Administradores y Directores no serán responsables de ningún daño eventual, directo, indirecto, punitivo, real, consecuente, especial, ejemplar o de cualquier otro tipo, incluida la pérdida de ingresos, dolor o sufrimiento, estrés emocional o similares, incluso si la Empresa ha sido advertida sobre la posibilidad de tales daños. De ninguna manera, la responsabilidad colectiva de Wilgner Silva, sus Filiales, Afiliados, Licenciantes, Proveedores de Servicio, Proveedores de Contenido, Empleados, Agentes, Administradores y Directores en relación con terceros (independientemente del tipo de acción, ya sea por contrato o cualquier otro) excederá la cantidad de R$100 (cien reales) o el valor pagado a la empresa por dicho Contenido, Producto o Servicio al que se haya planteado la cuestión. Si usted no acepta esta limitación de responsabilidad, no está autorizado a obtener o acceder a ningún material a través de los servicios o sitios web de Wilgner Silva, incluidos todos sus programas, como los Servicios de Wilgner Silva."
+    }
+  },
+  "footer": {
+    "copyright": "© 2023 Wilgner Silva. Todos los derechos reservados.",
+    "privacy_policy": "Política de Privacidad",
+    "cookies_policy": "Política de Cookies",
+    "terms_of_service": "Términos de Servicio"
+  }
+}

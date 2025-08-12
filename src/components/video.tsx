@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const VideoSection = () => {
+  const { t } = useTranslation();
+
   return (
     <main className="bg-[#090A0B] text-white py-10">
       <div className="container mx-auto px-6">
@@ -6,13 +10,13 @@ const VideoSection = () => {
           <div className="flex flex-col items-center justify-between mb-10">
             <div className="text-left w-full">
               <h1 className="font-montserrat font-bold text-4xl md:text-5xl leading-tight bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
-                Torne-se o lutador que sempre derruba!
+                {t('video_section.title')}
               </h1>
             </div>
             <div className="w-full mt-2">
               <p className="text-lg text-left md:text-xl text-gray-300 font-montserrat font-normal leading-relaxed">
-                Descubra como dominar as quedas e finalmente impor seu jogo no jiu-jitsu com o <span className="font-bold bg-gradient-to-r from-gray-200 to-yellow-500 bg-clip-text text-transparent">
-                  Campeão Brasileiro de Wrestling em 2018
+                {t('video_section.description_part1')} <span className="font-bold bg-gradient-to-r from-gray-200 to-yellow-500 bg-clip-text text-transparent">
+                  {t('video_section.description_part2')}
                 </span>
               </p>
             </div>
@@ -29,7 +33,7 @@ const VideoSection = () => {
               playsInline
               preload="metadata"
             >
-              Seu navegador não suporta a tag de vídeo.
+              {t('video_section.video_not_supported')}
             </video>
           </div>
 
@@ -38,13 +42,13 @@ const VideoSection = () => {
               className="w-full md:min-w-[180px] cursor-pointer bg-yellow-500 text-gray-900 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:bg-yellow-600"
               onClick={() => window.location.href = '#inscricao'}
             >
-              Virar uma máquina
+              {t('video_section.button_machine')}
             </button>
             <button
               className="w-full md:min-w-[180px] cursor-pointer bg-neutral-900 text-white border-1 border-neutral-700 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:bg-neutral-700"
               onClick={() => window.location.href = '#conteudo'}
             >
-              Conheça o conteúdo
+              {t('video_section.button_content')}
             </button>
           </div>
         </div>

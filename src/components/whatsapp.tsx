@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 const WhatsApp = () => {
+    const { t } = useTranslation();
     return (
         <section className="bg-[#090A0B] w-full py-16  text-white">
             <div className="max-w-5xl mx-auto text-center px-4">
@@ -8,11 +11,11 @@ const WhatsApp = () => {
                         alt="WhatsApp"
                         className="w-20 h-20"
                     />
-                    <h2 className="text-3xl font-bold">Ainda tem dúvidas se o curso é para você?</h2>
+                    <h2 className="text-3xl font-bold">{t('whatsapp_section.title')}</h2>
                 </div>
 
                 <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Fale agora no WhatsApp com a minha equipe e vamos tirar todas as dúvidas que você ainda tem sobre o curso.
+                    {t('whatsapp_section.description')}
                 </p>
 
                 <a
@@ -25,7 +28,7 @@ const WhatsApp = () => {
                         alt="WhatsApp"
                         className="w-5 h-5"
                     />
-                    Falar no WhatsApp
+                    {t('whatsapp_section.button_text')}
                 </a>
             </div>
         </section>

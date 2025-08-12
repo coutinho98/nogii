@@ -1,0 +1,195 @@
+{
+    "video_section": {
+        "title": "Torne-se o lutador que sempre derruba!",
+        "description_part1": "Descubra como dominar as quedas e finalmente impor seu jogo no jiu-jitsu com o",
+        "description_part2": "Campeão Brasileiro de Wrestling em 2018",
+        "video_not_supported": "Seu navegador não suporta a tag de vídeo.",
+        "button_machine": "Virar uma máquina",
+        "button_content": "Conheça o conteúdo"
+    },
+    "pain_points": {
+        "title": "Se sentindo frustrado no tatame?",
+        "points": [
+            "Cansado de depender só de puxar pra guarda e nunca conseguir impor seu jogo?",
+            "Sempre por baixo, sendo dominado pelos adversários mais experientes?",
+            "Frustrado por não conseguir derrubar ninguém, mesmo treinando há meses?",
+            "Envergonhado quando todos ficam olhando e você simplesmente não consegue tirar o cara do pé?",
+            "Perdendo lutas que poderia ganhar se soubesse como controlar a luta em pé?"
+        ],
+        "recognition_text": "Reconhece essa situação? Eu vivi isso na pele por anos, até descobrir o que realmente funciona."
+    },
+    "benefits_section": {
+        "subtitle": "O único método no Brasil que transforma lutadores de Jiu-Jitsu em máquinas de derrubar.",
+        "title": "Aqui você vai aprender",
+        "points": [
+            {
+                "title": "Dominar",
+                "text": "a luta desde o primeiro contato;"
+            },
+            {
+                "title": "Derrubar",
+                "text": "qualquer adversário com confiança total;"
+            },
+            {
+                "title": "Controlar",
+                "text": "onde a luta acontece – em pé ou no chão;"
+            },
+            {
+                "title": "Impor",
+                "text": "seu ritmo e sua estratégia desde o início;"
+            },
+            {
+                "title": "Ganhar respeito",
+                "text": "de todos na academia pelo seu wrestling;"
+            },
+            {
+                "title": "Competir",
+                "text": "com vantagem real sobre 90% dos adversários."
+            }
+        ]
+    },
+    "testimonials_section": {
+        "title": "Esses são alguns dos nossos alunos que começaram a derrubar seus oponentes",
+        "items": [
+            {
+                "text": "Vlw professor!! O curso está tão bem explicado que não deixa dúvidas. Meus alunos estão muito empolgados, estão desenvolvendo em pouco tempo o que muitos levariam anos. Eu é que só tenho a agradecer!!! Depois vamos combinar para vc fazer um seminário aqui na cidade e região."
+            },
+            {
+                "text": "Muito bom irmão. Você faz a parada ser muito simples ❤️. Os verdadeiros gênios (professores) pegam coisas complexas e tornam simples ❤️. Parabéns."
+            },
+            {
+                "text": "Parabéns pela iniciativa do curso online, muitas cidades pequenas como a minha não tem especialistas na área! Mas com o conhecimento de jiu-jitsu um pouco avançado, já conseguimos aprender através de vídeos e se auto corrigir!"
+            }
+        ]
+    },
+    "instructor_bio": {
+        "greeting": "Muito prazer! Sou",
+        "name": "Wilgner Silva",
+        "title": "Campeão brasileiro em 2018",
+        "description_part1": "Sou uma das",
+        "description_highlight1": "maiores referências no Wrestling Nacional.",
+        "description_part2": "Atleta",
+        "description_highlight2": "campeão nacional, nº1 do Brasil em 2018",
+        "description_part3": "e diversas vezes medalhista nacional na modalidade, dentre outros títulos.",
+        "description_part4": "Sou",
+        "description_highlight3": "professor de vários atletas de ponta no Jiu-Jítsu",
+        "description_part5": "e ensino quedas para os líderes das maiores academias no Brasil.",
+        "description_part6": "Todos os meus alunos tiveram uma",
+        "description_highlight4": "mudança notória",
+        "description_part7": "através dos meus ensinamentos em Luta Olímpica.",
+        "description_part8": "A",
+        "description_highlight5": "evolução rápida e a didática de ensino",
+        "description_part9": "para os mais variados tipos de alunos são a minha marca pessoal.",
+        "call_to_action": "Venha fazer parte deste time você também!"
+    },
+    "course_modules": {
+        "title": "Seguindo este caminho que eles conseguiram chegar nesse resultado",
+        "module1": {
+            "title": "MOVIMENTOS BÁSICOS",
+            "description": "Este módulo te ensina as quedas mais eficazes do wrestling moderno com uma metodologia única: cada técnica é quebrada em seus componentes essenciais para garantir execução perfeita. Você dominará as duas quedas que resolvem 80% das situações - Single Leg e Double Leg - além de suas variações mais letais e as defesas que te tornarão impossível de derrubar."
+        },
+        "module2": {
+            "title": "ENTRADAS QUE TODO GRAPPLER DEVE SABER",
+            "description": "Dominar quedas sem saber criar oportunidades é inútil. Este módulo ensina os setups e entradas que transformam qualquer situação defensiva em chance de queda garantida. Você aprenderá a \"enxergar\" aberturas onde outros só veem guardas fechadas.",
+            "why_it_works": "Por que funciona:",
+            "why_it_works_description": "Enquanto 90% força quedas contra adversários preparados, você criará suas próprias oportunidades, fazendo suas quedas parecerem \"fáceis demais.\""
+        },
+        "module3": {
+            "title": "CINTURADAS E CLINCH",
+            "description": "Quando a luta fica grudada, quem domina o clinch domina tudo. Você aprenderá as cinturadas e técnicas que fazem adversários se sentirem presos em uma morsa - impossíveis de escapar.",
+            "why_it_works_description": "No clinch, técnica vence força. Mesmo sendo menor, você controlará adversários maiores através de alavancas e pressão inteligente."
+        },
+        "module4": {
+            "title": "DEFESAS",
+            "description": "Uma defesa sólida é sua arma secreta para vencer qualquer adversário. Aqui você aprende que é muito mais desgastante atacar do que defender - e como usar isso a seu favor. Enquanto seus oponentes se esgotam tentando te derrubar, você conserva energia e espera o momento perfeito para atacar."
+        },
+        "module5": {
+            "title": "DRILLS",
+            "description": "Conhecer as técnicas é apenas o começo - dominar é sobre repetição inteligente. Este módulo te ensina os drills específicos que gravam os movimentos na sua memória muscular até se tornarem automáticos. É a diferença entre saber fazer e fazer sem pensar."
+        },
+        "module6": {
+            "title": "BÔNUS",
+            "description": "As técnicas que poucos conhecem e ainda menos dominam. Este módulo bônus revela movimentos de elite que combinam wrestling com judô, defesas avançadas contra finalizações e quedas espetaculares que deixam adversários sem reação. São as cartas na manga que transformam bons lutadores em imbatíveis."
+        }
+    },
+    "pricing_section": {
+        "from_price": "de",
+        "to_price": "por apenas",
+        "installments_text": "12x de",
+        "or_text": "ou",
+        "cash_text": "à vista",
+        "limited_offer": "Oferta exclusiva — válida por tempo limitado",
+        "benefits_list": [
+            "Do básico ao avançado",
+            "Acesso vitalício",
+            "Certificado de conclusão",
+            "Garantia incondicional de 7 dias",
+            "Suporte para dúvidas",
+            "Atualizações grátis"
+        ],
+        "button_text": "Quero aprender a derrubar!"
+    },
+    "whatsapp_section": {
+        "title": "Ainda tem dúvidas se o curso é para você?",
+        "description": "Fale agora no WhatsApp com a minha equipe e vamos tirar todas as dúvidas que você ainda tem sobre o curso.",
+        "button_text": "Falar no WhatsApp"
+    },
+    "faq_section": {
+        "title": "Dúvidas Frequentes",
+        "items": [
+            {
+                "question": "Quanto tempo de acesso eu tenho?",
+                "answer": "O acesso ao curso é vitalício, portanto, você pagará apenas uma vez e poderá acessar o conteúdo quando quiser."
+            },
+            {
+                "question": "Tem certificado?",
+                "answer": "Sim, ao finalizar todo o conteúdo do curso, você conseguirá emitir o certificado."
+            },
+            {
+                "question": "Por onde poderei acessar o curso?",
+                "answer": "Seu acesso será pela Kiwify."
+            },
+            {
+                "question": "Como vou receber meu acesso?",
+                "answer": "Você receberá um e-mail no seu e-mail cadastrado no ato da compra com todas as informações de acesso."
+            },
+            {
+                "question": "As aulas são online?",
+                "answer": "Sim, todo o conteúdo do curso é 100% online."
+            }
+        ]
+    },
+    "legal_page": {
+        "title": "Políticas e Termos de Serviço",
+        "subtitle": "A seguir, você encontra as informações detalhadas sobre as políticas de privacidade, cookies e os termos de serviço.",
+        "privacy_policy": {
+            "title": "POLÍTICAS DE PRIVACIDADE",
+            "section1_title": "1. Informações do Usuário",
+            "section1_p1": "1.1 É importante coletarmos algumas informações dos usuários de nossos serviços para que possamos oferecer um site melhor e mais direcionado às suas preferências. Também precisamos informá-los sobre novidades e informações relevantes. Por isso, leia atentamente esta política e nossos termos de uso.",
+            "section1_p2": "1.2 Garantimos que quaisquer informações pessoais dos usuários não serão fornecidas, publicadas ou comercializadas em quaisquer circunstâncias. Estas informações estão seguras conosco. Exceto em casos de participação do usuário em algum comentário ou postagem. Neste caso, o nome, e-mail e depoimento poderão ser publicados, conforme nossos termos de uso."
+        },
+        "cookies_policy": {
+            "title": "POLÍTICAS DE COOKIES",
+            "section1_p1": "1. Podemos utilizar a tecnologia de cookies para melhorar a experiência do usuário. Isso auxilia na identificação do seu IP, facilitando a navegação e customizando a navegação. Você pode bloquear qualquer uso de cookies diretamente no seu navegador."
+        },
+        "terms_of_service": {
+            "title": "TERMOS DE SERVIÇOS",
+            "section1_title": "1. Aviso Legal",
+            "section1_p1": "1.1 Você concorda e entende que o Wilgner Silva se esforça ao máximo para evitar, mas não consegue garantir que arquivos disponíveis para download via Internet estejam livres de vírus, worms, cavalos de Tróia ou outro código que possa manifestar propriedades contaminadoras ou destrutivas.",
+            "section1_p2": "1.2 Você é responsável por implementar práticas, procedimentos e checagens de segurança dos seus dispositivos (computador, smartphone, tablet, etc.) e por manter meios externos a este e outros sites para reconstrução de qualquer dado perdido. O Wilgner Silva não assume nenhuma responsabilidade ou risco pelo seu uso da internet.",
+            "section1_p3": "1.3 O uso deste site é de sua total responsabilidade.",
+            "section1_p4": "1.4 Os conteúdos deste e de outros programas do Wilgner Silva não são necessariamente completos e atualizados e não devem ser usados para substituir quaisquer relatórios, declarações, recomendações das ferramentas e plataformas utilizadas nos treinamento ou avisos dados pela Wilgner Silva.",
+            "section1_p5": "1.5 A informação obtida ao usar este site não é completa e não cobre todas as questões, tópicos ou fatos que possam ser relevantes para seus objetivos.",
+            "section1_p6": "1.6 O Conteúdo é oferecido na forma “como está” e não tem nenhuma garantia de resultado de qualquer tipo, expressa ou implícita. o Wilgner Silva não garante que as funções ou o conteúdo dos programas serão contínuos, livres de erro ou que falhas serão corrigidas ou que este site e os servidores que o tornam disponíveis estejam livres de vírus ou outros componentes destrutivos.",
+            "section1_p7": "1.7 O Wilgner Silva não garante ou faz qualquer representação relacionada ao uso ou resultados do uso dos conteúdos de seus programas em termos de precisão, confiabilidade ou outros. O conteúdo dos programas pode incluir imprecisões técnicas ou erros tipográficos e o Wilgner Silva pode fazer mudanças e melhorias a qualquer tempo, sem aviso prévio. Você, e não o Wilgner Silva, assume o custo de qualquer serviço, reparo ou correção necessários no caso de qualquer perda ou dano consequente do uso deste programa. O Wilgner Silva não oferece garantia que o uso dos seus programas não irá infringir o direito de outro e não assume qualquer responsabilidade por erros ou omissões no conteúdo. Toda informação desse programa, seja de natureza histórica ou prospectivas, é válida somente para a data que foi publicada no site e o Wilgner Silva não se compromete com nenhuma obrigação de atualizar tal informação depois que é publicada ou remover tal informação deste e de qualquer outro site caso ela não seja (mais) precisa ou completa.",
+            "section2_title": "2. Limitação de responsabilidade",
+            "section2_p1": "2.1 O Wilgner Silva, suas Filiais, Afiliados, Licenciantes, Provedores de Serviço, Provedores de Conteúdo, Empregados, Agentes, Administradores e Diretores não serão responsáveis por qualquer dano eventual, direto, indireto, punitivo, real, consequente, especial, exemplar ou de qualquer outro tipo, incluindo perda de receita ou renda, dor ou sofrimento, estresse emocional ou similares mesmo que a Empresa tenha aconselhado sobre a possibilidade de tais danos. De nenhuma forma, a responsabilidade coletiva do Wilgner Silva, suas Filiais, Afiliados, Licenciantes, Provedores de Serviço, Provedores de Conteúdo, Empregados, Agentes, Administradores e Diretores em relação a terceiros (independentemente do tipo de ação, seja por contrato ou qualquer outro) excederá a quantia de R$100 (cem reais) ou o valor pago à empresa por tal Conteúdo, Produto ou Serviço ao qual a questão tenha sido levantada. Se você não aceitar esta limitação de responsabilidade, você não está autorizado a obter ou acessar qualquer material por meio dos serviços ou sites do Wilgner Silva, incluindo todos os seus programas, como os Serviços do Wilgner Silva."
+        }
+    },
+    "footer": {
+        "copyright": "© 2023 Wilgner Silva. Todos os direitos reservados.",
+        "privacy_policy": "Política de Privacidade",
+        "cookies_policy": "Política de Cookies",
+        "terms_of_service": "Termos de Serviço"
+    }
+}
