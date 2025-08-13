@@ -10,12 +10,16 @@ import TestimonialSection from './components/depoiments'
 import Footer from './components/footer'
 import LegalPage from './components/legal';
 import LanguageSwitcher from './components/LanguageSwitcher';
+import ThemeSwitcher from './components/ThemeSwitcher'; // Importe o novo componente
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <LanguageSwitcher /> 
+      <div className="fixed top-6 right-6 z-50 flex items-center space-x-2">
+        <LanguageSwitcher />
+        <ThemeSwitcher />
+      </div>
       <VideoSection />
       <PainPointsSection />
       <BenefitsSection />
@@ -29,7 +33,6 @@ function App() {
     </div>
   );
 }
-
 
 const AppRouter = () => {
   return (

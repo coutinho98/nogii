@@ -4,7 +4,7 @@ const VideoSection = () => {
   const { t } = useTranslation();
 
   return (
-    <main className="bg-[#090A0B] text-white py-10">
+  <main className="bg-white dark:bg-[#090A0B] text-black dark:text-white py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center justify-between mb-10">
