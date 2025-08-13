@@ -3,52 +3,51 @@ import { useSpring, animated, config } from '@react-spring/web';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
 const ThemeSwitcher = () => {
-    const [theme, setTheme] = useState(
-        () => localStorage.getItem('theme') || 'dark'
-    );
+    // Verifica o tema inicial baseado no localStorage ou preferência do sistema
+    const [isDark, setIsDark] = useState(() => {
+        if (typeof window === 'undefined') return false;
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            return savedTheme === 'dark';
+        }
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    });
 
     const toggleTheme = () => {
-        setTheme(currentTheme => {
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            console.log('Current theme state:', currentTheme);
-            return newTheme;
-        });
+        setIsDark(prev => !prev);
     };
 
     useEffect(() => {
         const html = document.documentElement;
-        const body = document.body;
 
-        html.classList.remove('light', 'dark');
-        body.classList.remove('light', 'dark');
-
-        if (theme === 'dark') {
+        if (isDark) {
             html.classList.add('dark');
-            body.classList.add('dark');
             localStorage.setItem('theme', 'dark');
         } else {
-            html.classList.add('light');
-            body.classList.add('light');
+            html.classList.remove('dark');
             localStorage.setItem('theme', 'light');
         }
-    }, [theme]);
+
+    }, [isDark]);
 
     const props = useSpring({
-        transform: theme === 'dark' ? 'rotate(180deg)' : 'rotate(0deg)',
+        transform: isDark ? 'rotate(180deg)' : 'rotate(0deg)',
         config: config.gentle,
     });
 
     return (
         <button
             onClick={toggleTheme}
-            className="p-2 rounded-full text-white bg-gray-800 dark:bg-gray-200 transition-colors"
-            aria-label="Toggle theme"
+            className="p-2 rounded-full bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300"
+            aria-label={`Switch to ${isDark ? 'light' : 'dark'} theme`}
         >
             <animated.div style={props}>
-                {theme === 'dark' ? (
-                    <SunIcon className="w-6 h-6 text-yellow-400" />
+                {isDark ? (
+                    <SunIcon className="w-6 h-6 text-yellow-500" />
                 ) : (
-                    <MoonIcon className="w-6 h-6 text-gray-800" />
+                    <MoonIcon className="w-6 h-6 text-gray-100" />
                 )}
             </animated.div>
         </button>

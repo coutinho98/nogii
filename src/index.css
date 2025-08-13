@@ -1,22 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @utility font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
 
 html,
 body {
-  background-attachment: fixed;
   scroll-behavior: smooth;
-}
-
-body {
-  background: linear-gradient(to bottom, #000000 0%, #FFFFFF 100%);
-  color: #FFFFFF;
-}
-
-.dark body {
-  background: linear-gradient(to bottom, #FFFFFF 0%, #000000 100%);
-  color: #000000;
+  transition: all 0.3s ease;
 }

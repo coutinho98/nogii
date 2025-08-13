@@ -61,17 +61,17 @@ const PricingSection = () => {
   const priceParts = splitPriceParts(20.37, lang);
 
   return (
-    <section className="bg-[#090A0B] text-white relative overflow-hidden">
-      <div className="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center md:items-start justify-center gap-10 relative z-10 max-w-5xl">
+    <section className="relative overflow-hidden py-16">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-center gap-10 relative z-10 max-w-5xl">
 
         {/* Lado esquerdo */}
         <div className="text-center md:text-left flex-1 md:w-1/2">
-          <p className="text-lg text-white">
+          <p className="text-lg">
             {t('pricing_section.from_price')}{" "}
             <span className="line-through">{formatPrice(497, lang)}</span>
           </p>
-          <p className="text-lg text-white">{t('pricing_section.to_price')}</p>
-          <p className="text-3xl font-bold tracking-tight ">{t('pricing_section.installments_text')}</p>
+          <p className="text-lg">{t('pricing_section.to_price')}</p>
+          <p className="text-3xl font-bold tracking-tight">{t('pricing_section.installments_text')}</p>
 
           <p className="relative inline-flex items-start text-7xl font-extrabold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent leading-tight drop-shadow-lg">
             {priceParts.symbolBefore}{priceParts.integerPart}
@@ -89,19 +89,19 @@ const PricingSection = () => {
             <span className="align-top text-sm"> {t('pricing_section.cash_text')}</span>
           </p>
 
-          <p className="mt-4 text-sm text-gray-400 italic">
+          <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">
             {t('pricing_section.limited_offer')}
           </p>
         </div>
 
         {/* Lado direito */}
-        <div className="bg-[#111] p-8 rounded-xl shadow-lg max-w-sm w-full flex-1 md:w-1/2">
-          <ul className="space-y-3 text-white text-sm md:text-base">
+        <div className="bg-gray-100 dark:bg-[#111] p-8 rounded-xl shadow-lg max-w-sm w-full flex-1 md:w-1/2 transition-colors duration-300">
+          <ul className="space-y-3 text-gray-900 dark:text-white text-sm md:text-base">
             {benefitsList.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
                 <li key={index} className="flex items-center">
-                  <Icon className="h-5 w-5 text-yellow-300 mr-2" />
+                  <Icon className="h-5 w-5 text-yellow-500 dark:text-yellow-300 mr-2" />
                   {t(`pricing_section.benefits_list.${index}`)}
                 </li>
               );

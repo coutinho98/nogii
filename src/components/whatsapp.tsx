@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 const WhatsApp = () => {
     const { t } = useTranslation();
     return (
-        <section className="bg-[#090A0B] w-full py-16  text-white">
+        <section className="w-full py-16">
             <div className="max-w-5xl mx-auto text-center px-4">
                 <div className="flex justify-center items-center gap-3 mb-6">
                     <img
@@ -14,8 +14,8 @@ const WhatsApp = () => {
                     <h2 className="text-3xl font-bold">{t('whatsapp_section.title')}</h2>
                 </div>
 
-                <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                    {t('whatsapp_secti  on.description')}
+                <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                    {t('whatsapp_section.description')}
                 </p>
 
                 <a

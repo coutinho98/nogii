@@ -24,11 +24,10 @@ const benefitIcons: { [key: string]: React.ElementType } = {
 const BenefitsSection = () => {
     const { t } = useTranslation();
 
-    // 3. Obtém a lista de benefícios traduzidos
     const benefits = t('benefits_section.points', { returnObjects: true }) as BenefitItem[];
 
     return (
-        <div className="bg-[#090A0B] text-white py-10 ">
+        <section className="py-10">
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto text-center">
 
@@ -46,10 +45,10 @@ const BenefitsSection = () => {
                         {benefits.map((item: BenefitItem, index: number) => {
                             const Icon = benefitIcons[item.title];
                             return (
-                                <div key={index} className="bg-[#1A1D1F] rounded-lg p-8 text-left">
+                                <div key={index} className="bg-gray-100 dark:bg-[#1A1D1F] rounded-lg p-8 text-left transition-colors duration-300">
                                     <div className="flex items-start">
-                                        {Icon && <Icon className="h-6 w-6 mr-4 mt-1" />}
-                                        <p className="text-white">
+                                        {Icon && <Icon className="h-6 w-6 mr-4 mt-1 text-gray-700 dark:text-white" />}
+                                        <p className="text-gray-900 dark:text-white">
                                             <span className="font-bold">{item.title}</span> {item.text}
                                         </p>
                                     </div>
@@ -59,7 +58,7 @@ const BenefitsSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

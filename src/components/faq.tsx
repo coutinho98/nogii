@@ -31,7 +31,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="bg-[#090A0B] text-white py-16">
+    <section className="py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -45,12 +45,12 @@ const FaqSection = () => {
           </div>
           <div className="md:w-2/3">
             {faqItems.map((item: FaqItem, index: number) => (
-              <div key={index} className="bg-gradient-to-r from-yellow-200 to-orange-500 text-black font-bold mt-3 overflow-hidden">
+              <div key={index} className="bg-gradient-to-r from-yellow-200 to-orange-500 text-black font-bold mt-3 overflow-hidden rounded-lg">
                 <button
                   className="w-full flex justify-between items-center p-6 text-left focus:outline-none transition-colors duration-300"
                   onClick={() => toggleAnswer(index)}
                 >
-                  <h3 className="text-lg font-semibold ">
+                  <h3 className="text-lg font-semibold">
                     {item.question}
                   </h3>
                   <ChevronDownIcon

@@ -4,7 +4,7 @@ const VideoSection = () => {
   const { t } = useTranslation();
 
   return (
-  <main className="bg-white dark:bg-[#090A0B] text-black dark:text-white py-10">
+    <section className="py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center justify-between mb-10">
@@ -14,8 +14,8 @@ const VideoSection = () => {
               </h1>
             </div>
             <div className="w-full mt-2">
-              <p className="text-lg text-left md:text-xl text-gray-300 font-montserrat font-normal leading-relaxed">
-                {t('video_section.description_part1')} <span className="font-bold bg-gradient-to-r from-gray-200 to-yellow-500 bg-clip-text text-transparent">
+              <p className="text-lg text-left md:text-xl text-gray-600 dark:text-gray-300 font-montserrat font-normal leading-relaxed">
+                {t('video_section.description_part1')} <span className="font-bold bg-gradient-to-r from-gray-700 dark:from-gray-200 to-yellow-500 bg-clip-text text-transparent">
                   {t('video_section.description_part2')}
                 </span>
               </p>
@@ -39,13 +39,13 @@ const VideoSection = () => {
 
           <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 w-full max-w-xs md:max-w-none mx-auto mt-6">
             <button
-              className="w-full md:min-w-[180px] cursor-pointer bg-yellow-500 text-gray-900 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:bg-yellow-600"
+              className="w-full md:min-w-[180px] cursor-pointer bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:scale-105"
               onClick={() => window.open("https://pay.kiwify.com.br/abTfgqv", "_blank", "noopener,noreferrer")}
             >
               {t('video_section.button_machine')}
             </button>
             <button
-              className="w-full md:min-w-[180px] cursor-pointer bg-neutral-900 text-white border-1 border-neutral-700 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:bg-neutral-700"
+              className="w-full md:min-w-[180px] cursor-pointer bg-gray-100 hover:bg-gray-200 dark:bg-neutral-900 dark:hover:bg-neutral-700 text-gray-900 dark:text-white border border-gray-300 dark:border-neutral-700 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:scale-105"
               onClick={() => {
                 const targetElement = document.getElementById('conteudo');
                 if (targetElement) {
@@ -58,7 +58,7 @@ const VideoSection = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
