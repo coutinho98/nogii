@@ -33,7 +33,6 @@ const Footer = () => {
             {t('footer.terms_of_service')}
           </Link>
         </nav>
-
       </div>
     </footer>
   );

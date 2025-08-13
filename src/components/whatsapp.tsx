@@ -15,11 +15,11 @@ const WhatsApp = () => {
                 </div>
 
                 <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                    {t('whatsapp_section.description')}
+                    {t('whatsapp_secti  on.description')}
                 </p>
 
                 <a
-                    href="https://wa.me/5599999999999"
+                    href="https://api.whatsapp.com/send?phone=5561981292064&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20curso%20de%20%20Wrestling%20%20para%20%20o%20%20Jiu-J%C3%ADtsu"
                     target="_blank"
                     className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105"
                 >

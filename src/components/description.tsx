@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Wilgner from '../assets/images/wilgnersilva.webp'
 
 const InstructorBioSection = () => {
   const { t } = useTranslation();
@@ -37,7 +38,7 @@ const InstructorBioSection = () => {
 
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="https://wilgnersilva.com.br/wp-content/webp-express/webp-images/uploads/2025/08/WhatsApp-Image-2025-08-05-at-18.01.05-951x1024.jpeg.webp"
+              src={Wilgner}
               alt={t('instructor_bio.name')}
               className="w-96 h-96 rounded-lg shadow-xl object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl"
             />

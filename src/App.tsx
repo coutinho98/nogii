@@ -20,7 +20,6 @@ function App() {
       <PainPointsSection />
       <BenefitsSection />
       <TestimonialSection />
-      
       <InstructorBioSection />
       <CourseModulesSection />
       <PricingSection />

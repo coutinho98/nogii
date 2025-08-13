@@ -9,4 +9,5 @@ html,
 body {
   background: linear-gradient(to bottom, #000000 0%, #FFFFFF 100%);
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }

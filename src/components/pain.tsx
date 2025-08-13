@@ -20,9 +20,9 @@ const PainPointsSection = () => {
                             {painPoints.map((text: string, index: number) => (
                                 <div
                                     key={index}
-                                    className="bg-[#1A1D1F]  p-8 text-left rounded-lg shadow-lg"
+                                    className="bg-[#FAF3E0] font-semibold p-8 text-left rounded-lg shadow-lg"
                                 >
-                                    <p className="text-gray-200">{text}</p>
+                                    <p className="text-gray-900">{text}</p>
                                 </div>
                             ))}
                         </div>

@@ -40,13 +40,18 @@ const VideoSection = () => {
           <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 w-full max-w-xs md:max-w-none mx-auto mt-6">
             <button
               className="w-full md:min-w-[180px] cursor-pointer bg-yellow-500 text-gray-900 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:bg-yellow-600"
-              onClick={() => window.location.href = '#inscricao'}
+              onClick={() => window.open("https://pay.kiwify.com.br/abTfgqv", "_blank", "noopener,noreferrer")}
             >
               {t('video_section.button_machine')}
             </button>
             <button
               className="w-full md:min-w-[180px] cursor-pointer bg-neutral-900 text-white border-1 border-neutral-700 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:bg-neutral-700"
-              onClick={() => window.location.href = '#conteudo'}
+              onClick={() => {
+                const targetElement = document.getElementById('conteudo');
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               {t('video_section.button_content')}
             </button>
