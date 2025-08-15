@@ -7,7 +7,7 @@ interface FaqItem {
   answer: string;
 }
 
-const FaqSection = () => {
+const FaqSection = ({ className }: { className?: string }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const { t } = useTranslation();
 
@@ -31,7 +31,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="py-16">
+    <section className={`py-16 ${className}`}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -45,23 +45,27 @@ const FaqSection = () => {
           </div>
           <div className="md:w-2/3">
             {faqItems.map((item: FaqItem, index: number) => (
-              <div key={index} className="bg-gradient-to-r from-yellow-200 to-orange-500 text-black font-bold mt-3 overflow-hidden rounded-lg">
+              <div 
+                key={index} 
+                // Atualizado para usar classes dark:
+                className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white font-bold mt-3 overflow-hidden rounded-lg transition-colors duration-300"
+              >
                 <button
                   className="w-full flex justify-between items-center p-6 text-left focus:outline-none transition-colors duration-300"
                   onClick={() => toggleAnswer(index)}
                 >
-                  <h3 className="text-lg font-semibold">
+                  <h3 className="text-lg font-semibold ">
                     {item.question}
                   </h3>
                   <ChevronDownIcon
-                    className={`w-5 h-5 text-black transform transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
+                    className={`w-5 h-5 text-gray-900 dark:text-white transform transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
                   />
                 </button>
                 <div
                   className={`grid transition-all duration-500 ease-in-out ${openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
                 >
                   <div className="overflow-hidden">
-                    <p className="p-6 pt-0 text-black font-bold">
+                    <p className="p-6 pt-0 font-bold">
                       {item.answer}
                     </p>
                   </div>

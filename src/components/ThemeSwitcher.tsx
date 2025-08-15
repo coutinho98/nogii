@@ -40,7 +40,7 @@ const ThemeSwitcher = () => {
     return (
         <button
             onClick={toggleTheme}
-            className="p-2 rounded-full bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300"
+            className="ml-2 p-2 rounded-full bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300"
             aria-label={`Switch to ${isDark ? 'light' : 'dark'} theme`}
         >
             <animated.div style={props}>

@@ -7,7 +7,7 @@ interface TestimonialItem {
   text: string;
 }
 
-const TestimonialSection = () => {
+const TestimonialSection = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const x = useMotionValue(0);
@@ -49,7 +49,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-10">
+    <section className={`py-10 ${className}`}>
       <div className="container mx-auto px-6 max-w-7xl overflow-hidden relative">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">
           {t('testimonials_section.title')}

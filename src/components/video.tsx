@@ -1,15 +1,15 @@
 import { useTranslation } from 'react-i18next';
 
-const VideoSection = () => {
+const VideoSection = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-10">
+    <section className={`py-10 ${className}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center justify-between mb-10">
             <div className="text-left w-full">
-              <h1 className="font-montserrat font-bold text-4xl md:text-5xl leading-tight bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
+              <h1 className="font-montserrat  uppercase font-bold text-4xl md:text-5xl leading-tight bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
                 {t('video_section.title')}
               </h1>
             </div>
@@ -36,7 +36,7 @@ const VideoSection = () => {
               {t('video_section.video_not_supported')}
             </video>
           </div>
-
+          
           <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 w-full max-w-xs md:max-w-none mx-auto mt-6">
             <button
               className="w-full md:min-w-[180px] cursor-pointer bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-montserrat font-bold py-2 px-4 rounded-full shadow-md transition duration-400 transform hover:scale-105"

@@ -15,20 +15,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App min-h-screen bg-white dark:bg-[#090A0B] text-gray-900 dark:text-white transition-colors duration-300">
-      <div className="fixed top-6 right-6 z-50 flex items-center space-x-2">
-        <LanguageSwitcher />
+    <div className="App min-h-screen transition-colors duration-300">
+      <div className="flex-col  fixed top-6 right-6 z-50 flex items-center space-x-2">
         <ThemeSwitcher />
+        <LanguageSwitcher />
       </div>
-      <VideoSection />
-      <PainPointsSection />
-      <BenefitsSection />
-      <TestimonialSection />
-      <InstructorBioSection />
-      <CourseModulesSection />
-      <PricingSection />
-      <WhatsApp />
-      <FaqSection />
+      <VideoSection className="bg-white dark:bg-black" />
+      <PainPointsSection className="bg-gray-100 dark:bg-gray-900" />
+      <BenefitsSection className="bg-white dark:bg-black" />
+      <TestimonialSection className="bg-gray-100 dark:bg-gray-900" />
+      <InstructorBioSection className="bg-white dark:bg-black" />
+      <CourseModulesSection className="bg-gray-100 dark:bg-gray-900" />
+      <PricingSection className="bg-white dark:bg-black" />
+      <WhatsApp className="bg-gray-100 dark:bg-gray-900 dark:text-white" />
+      <FaqSection className="bg-white dark:bg-black" />
       <Footer />
     </div>
   );

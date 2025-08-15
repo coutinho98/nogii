@@ -1,10 +1,10 @@
 {
   "video_section": {
-    "title": "¡Conviértete en el luchador que siempre derriba!",
-    "description_part1": "Descubre cómo dominar los derribos y finalmente imponer tu juego en el jiu-jitsu con el",
-    "description_part2": "Campeón Brasileño de Lucha Libre en 2018",
+    "title": "¡Conviértete en el luchador que siempre derriba",
+    "description_part1": "Descubre cómo dominar los derribos y consolida tu dominio del jiu-jitsu con el",
+    "description_part2": "campeón brasileño de lucha libre de 2018",
     "video_not_supported": "Tu navegador no soporta la etiqueta de vídeo.",
-    "button_machine": "Convertirse en una máquina",
+    "button_machine": "Conviértete en una máquina de derribar",
     "button_content": "Conoce el contenido"
   },
   "pain_points": {
@@ -187,7 +187,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2023 Wilgner Silva. Todos los derechos reservados.",
+    "copyright": "© 2025 Wilgner Silva. Todos los derechos reservados.",
     "privacy_policy": "Política de Privacidad",
     "cookies_policy": "Política de Cookies",
     "terms_of_service": "Términos de Servicio"

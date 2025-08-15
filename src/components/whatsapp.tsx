@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 
-const WhatsApp = () => {
+const WhatsApp = ({ className }: { className?: string }) => {
     const { t } = useTranslation();
     return (
-        <section className="w-full py-16">
+        <section className={`w-full py-16 ${className}`}>
             <div className="max-w-5xl mx-auto text-center px-4">
                 <div className="flex justify-center items-center gap-3 mb-6">
                     <img

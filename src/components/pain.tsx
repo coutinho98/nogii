@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 
-const PainPointsSection = () => {
+const PainPointsSection = ({ className }: { className?: string }) => {
     const { t } = useTranslation();
     const painPoints = t('pain_points.points', { returnObjects: true }) as string[];
 
     return (
-        <section className="relative w-full py-10">
+        <section className={`relative w-full py-10 ${className}`}>
             <div className="w-full max-w-none px-4 sm:px-6 lg:px-8">
                 <div className="max-w-5xl mx-auto">
 

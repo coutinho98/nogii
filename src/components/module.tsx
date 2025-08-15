@@ -6,10 +6,19 @@ import Def from '../assets/images/defesas.webp'
 import Drills from '../assets/images/drills.webp'
 import Bonus from '../assets/images/bonus.webp'
 
-const CourseModulesSection = () => {
+interface Module {
+  image: string;
+  title: string;
+  description: string;
+  why_it_works?: string;
+  why_it_works_description?: string;
+  alt: string;
+}
+
+const CourseModulesSection = ({ className }: { className?: string }) => {
     const { t } = useTranslation();
 
-    const modules = [
+    const modules: Module[] = [
         {
             image: BasicMove,
             title: t('course_modules.module1.title'),
@@ -20,16 +29,15 @@ const CourseModulesSection = () => {
             image: Grappling,
             title: t('course_modules.module2.title'),
             description: t('course_modules.module2.description'),
-            why_it_works: t('course_modules.module2.why_it_works', 'Por que funciona'),
-            why_it_works_description: t('course_modules.module2.why_it_works_description', ''),
+            why_it_works: t('course_modules.module2.why_it_works'),
+            why_it_works_description: t('course_modules.module2.why_it_works_description'),
             alt: "Imagem do Módulo de Entradas"
         },
         {
             image: Clinch,
             title: t('course_modules.module3.title'),
             description: t('course_modules.module3.description'),
-            why_it_works: t('course_modules.module3.why_it_works', 'Por que funciona'),
-            why_it_works_description: t('course_modules.module3.why_it_works_description', ''),
+            why_it_works_description: t('course_modules.module3.why_it_works_description'),
             alt: "Imagem do Módulo de Cinturadas e Clinch"
         },
         {
@@ -53,7 +61,7 @@ const CourseModulesSection = () => {
     ];
 
     return (
-        <section id="conteudo" className="py-10">
+        <section id="conteudo" className={`py-10 ${className}`}>
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">
@@ -74,7 +82,8 @@ const CourseModulesSection = () => {
                                 <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                                     {module.description}
                                 </p>
-                                {(module.why_it_works && module.why_it_works !== 'Por que funciona') && module.why_it_works_description && (
+                                {/* Verifica se why_it_works existe antes de renderizar */}
+                                {module.why_it_works && module.why_it_works_description && (
                                     <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                                         <span className="font-bold text-gray-900 dark:text-white">{module.why_it_works}:</span> {module.why_it_works_description}
                                     </p>

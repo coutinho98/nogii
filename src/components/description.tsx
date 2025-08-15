@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import Wilgner from '../assets/images/wilgnersilva.webp'
 
-const InstructorBioSection = () => {
+const InstructorBioSection = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-10 md:py-40">
+    <section className={`py-10 md:py-40 ${className}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
 

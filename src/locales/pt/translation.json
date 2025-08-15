@@ -1,10 +1,10 @@
 {
     "video_section": {
-        "title": "Torne-se o lutador que sempre derruba!",
+        "title": "Pare de ser o lutador que sempre cai e se torne aquele que derruba",
         "description_part1": "Descubra como dominar as quedas e finalmente impor seu jogo no jiu-jitsu com o",
         "description_part2": "Campeão Brasileiro de Wrestling em 2018",
         "video_not_supported": "Seu navegador não suporta a tag de vídeo.",
-        "button_machine": "Virar uma máquina",
+        "button_machine": "Virar uma máquina de derrubar",
         "button_content": "Conheça o conteúdo"
     },
     "pain_points": {
@@ -187,7 +187,7 @@
         }
     },
     "footer": {
-        "copyright": "© 2023 Wilgner Silva. Todos os direitos reservados.",
+        "copyright": "© 2025 Wilgner Silva. Todos os direitos reservados.",
         "privacy_policy": "Política de Privacidade",
         "cookies_policy": "Política de Cookies",
         "terms_of_service": "Termos de Serviço"

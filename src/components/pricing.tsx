@@ -1,7 +1,13 @@
 import { CheckBadgeIcon, ClockIcon, TrophyIcon, ShieldCheckIcon, QuestionMarkCircleIcon, ArrowPathIcon } from '@heroicons/react/24/solid';
 import { useTranslation } from 'react-i18next';
+import type { ElementType } from 'react';
 
-const benefitIcons: { [key: string]: React.ElementType } = {
+interface BenefitItem {
+  icon: ElementType;
+  text: string;
+}
+
+const benefitIcons: { [key: string]: ElementType } = {
   "Do básico ao avançado": TrophyIcon,
   "Acesso vitalício": ClockIcon,
   "Certificado de conclusão": CheckBadgeIcon,
@@ -23,9 +29,9 @@ const benefitIcons: { [key: string]: React.ElementType } = {
 };
 
 const currencyMap: Record<string, { currency: string; locale: string }> = {
-  pt: { currency: "BRL", locale: "pt-BR" }, 
-  en: { currency: "USD", locale: "en-US" }, 
-  es: { currency: "EUR", locale: "es-ES" }, 
+  pt: { currency: "BRL", locale: "pt-BR" },
+  en: { currency: "USD", locale: "en-US" },
+  es: { currency: "USD", locale: "en-US" },
 };
 
 const formatPrice = (value: number, lang: string) => {
@@ -49,22 +55,35 @@ const splitPriceParts = (value: number, lang: string) => {
   };
 };
 
-const PricingSection = () => {
+const PricingSection = ({ className }: { className?: string }) => {
   const { t, i18n } = useTranslation();
-  const lang = i18n.language.split("-")[0]; 
+  const lang = i18n.language.split("-")[0];
 
-  const benefitsList = (t('pricing_section.benefits_list', { returnObjects: true }) as string[]).map(benefit => ({
-    icon: benefitIcons[benefit] || TrophyIcon,
-    text: benefit,
+  const benefitsList = (t('pricing_section.benefits_list', { returnObjects: true }) as string[]).map(benefitText => ({
+    icon: benefitIcons[benefitText] || TrophyIcon,
+    text: benefitText,
   }));
 
-  const priceParts = splitPriceParts(20.37, lang);
+  let kiwifyUrl = "https://pay.kiwify.com/VFQHYeA";
+  let installmentsPrice = 20.37;
+  let fullPrice = 197;
+
+  if (lang === 'pt') {
+    kiwifyUrl = "https://pay.kiwify.com.br/abTfgqv";
+    installmentsPrice = 20.37;
+    fullPrice = 197;
+  } else {
+    kiwifyUrl += `?lang=${lang}`;
+    installmentsPrice = 4.70;
+    fullPrice = 47;
+  }
+
+  const priceParts = splitPriceParts(installmentsPrice, lang);
 
   return (
-    <section className="relative overflow-hidden py-16">
+    <section className={`relative overflow-hidden py-16 ${className}`}>
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-center gap-10 relative z-10 max-w-5xl">
 
-        {/* Lado esquerdo */}
         <div className="text-center md:text-left flex-1 md:w-1/2">
           <p className="text-lg">
             {t('pricing_section.from_price')}{" "}
@@ -81,12 +100,12 @@ const PricingSection = () => {
             {priceParts.symbolAfter}
           </p>
 
-          <p className="mt-2 text-lg">
+          <p className="mt-2 text-lg text-black dark:text-white">
             {t('pricing_section.or_text')}{" "}
             <span className="text-4xl font-bold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
-              {formatPrice(197, lang)}
+              {formatPrice(fullPrice, lang)}
             </span>
-            <span className="align-top text-sm"> {t('pricing_section.cash_text')}</span>
+            <span className="align-top text-sm "> {t('pricing_section.cash_text')}</span>
           </p>
 
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">
@@ -94,26 +113,25 @@ const PricingSection = () => {
           </p>
         </div>
 
-        {/* Lado direito */}
         <div className="bg-gray-100 dark:bg-[#111] p-8 rounded-xl shadow-lg max-w-sm w-full flex-1 md:w-1/2 transition-colors duration-300">
           <ul className="space-y-3 text-gray-900 dark:text-white text-sm md:text-base">
-            {benefitsList.map((benefit, index) => {
-              const Icon = benefit.icon;
+            {benefitsList.map((benefit: BenefitItem, index: number) => {
+              const Icon = benefitIcons[benefit.text] || TrophyIcon;
               return (
                 <li key={index} className="flex items-center">
                   <Icon className="h-5 w-5 text-yellow-500 dark:text-yellow-300 mr-2" />
-                  {t(`pricing_section.benefits_list.${index}`)}
+                  {benefit.text}
                 </li>
               );
             })}
           </ul>
 
           <button
-           onClick={() => window.open("https://pay.kiwify.com.br/abTfgqv", "_blank", "noopener,noreferrer")}
-            className="cursor-pointer mt-6 w-full flex items-center justify-center gap-2 
-             bg-gradient-to-r from-yellow-200 to-orange-500 text-black text-lg 
-             font-bold py-4 px-8 rounded-lg shadow-lg 
-             transition-all duration-500 ease-in-out 
+           onClick={() => window.open(kiwifyUrl, "_blank", "noopener,noreferrer")}
+            className="cursor-pointer mt-6 w-full flex items-center justify-center gap-2
+             bg-gradient-to-r from-yellow-200 to-orange-500 text-black text-lg
+             font-bold py-4 px-8 rounded-lg shadow-lg
+             transition-all duration-500 ease-in-out
              hover:from-yellow-300 hover:to-orange-500 hover:shadow-xl"
           >
             {t('pricing_section.button_text')}

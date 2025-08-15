@@ -6,13 +6,14 @@ import {
     UserGroupIcon
 } from '@heroicons/react/24/solid';
 import { useTranslation } from 'react-i18next';
+import type { ElementType } from 'react';
 
 interface BenefitItem {
     title: string;
     text: string;
 }
 
-const benefitIcons: { [key: string]: React.ElementType } = {
+const benefitIcons: { [key: string]: ElementType } = {
     "Dominar": ArrowsRightLeftIcon,
     "Derrubar": ArrowDownOnSquareStackIcon,
     "Controlar": FireIcon,
@@ -21,13 +22,13 @@ const benefitIcons: { [key: string]: React.ElementType } = {
     "Competir": TrophyIcon,
 };
 
-const BenefitsSection = () => {
+const BenefitsSection = ({ className }: { className?: string }) => {
     const { t } = useTranslation();
 
     const benefits = t('benefits_section.points', { returnObjects: true }) as BenefitItem[];
 
     return (
-        <section className="py-10">
+        <section className={`py-10 ${className}`}>
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto text-center">
 
@@ -43,7 +44,7 @@ const BenefitsSection = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 w-full">
                         {benefits.map((item: BenefitItem, index: number) => {
-                            const Icon = benefitIcons[item.title];
+                            const Icon = benefitIcons[item.title] || TrophyIcon;
                             return (
                                 <div key={index} className="bg-gray-100 dark:bg-[#1A1D1F] rounded-lg p-8 text-left transition-colors duration-300">
                                     <div className="flex items-start">
