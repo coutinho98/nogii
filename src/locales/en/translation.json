@@ -193,5 +193,248 @@
     "privacy_policy": "Privacy Policy",
     "cookies_policy": "Cookies Policy",
     "terms_of_service": "Terms of Service"
+  },
+  "course_content": {
+    "title": "What you will learn in this course?",
+    "topics": [
+      {
+        "title": "01 Main takedowns every grappler has to know",
+        "points": [
+          "Double Leg 3 Steps",
+          "Simple takedown on Single Leg",
+          "Side Single Single",
+          "Reverse Tai Otoshi from Back",
+          "Slide By - Hand inside",
+          "Neck Defense by using Arm Drag",
+          "Basic Bodylock starting from Single Leg"
+        ]
+      },
+      {
+        "title": "02 Double Leg - Main Variations",
+        "points": [
+          "Double Leg 3 Steps",
+          "Low Double Leg from Collar Tie and Triceps Grip",
+          "Double Leg going to Back",
+          "Double Leg pulling opposite leg",
+          "Simple Arbues"
+        ]
+      },
+      {
+        "title": "03 Takedowns from Single Leg",
+        "points": [
+          "Simple takedown",
+          "Single Leg - Shoulder on thigh",
+          "Single Leg - Cross or Arm in 90°",
+          "Grip on Hip",
+          "Hand on Collar",
+          "Hand on Collar 2",
+          "External turn with hand on knee",
+          "Crank or Hand on Heel",
+          "Makhachev 1",
+          "Makhachev 2",
+          "High Crotch",
+          "High Single Leg",
+          "High Elbow"
+        ]
+      },
+      {
+        "title": "04 Single Leg - Main Variations",
+        "points": [
+          "Single Leg standing Forehead in the middle of the Rib",
+          "Side Single Leg with Displacement. Collar Tie and Triceps grips",
+          "Side Single Leg",
+          "Single Leg on Back Leg",
+          "Side Single Leg changing base - Equal Bases - Right vs Right or Left vs Left",
+          "Ankle Pick standing",
+          "Ankle Pick",
+          "Reverse Ankle Pick",
+          "Collar Tie → Ankle Pick",
+          "External Ankle Pick"
+        ]
+      },
+      {
+        "title": "05 How leave Sprawl on Double Leg and Single Leg",
+        "points": [
+          "Double Leg hand on Ankle",
+          "Arbues - Head Inside",
+          "Head inside both legs looking up",
+          "Duck Under",
+          "Fake Arbues turning Head towards Inside",
+          "Single Leg Lateral with Whip"
+        ]
+      },
+      {
+        "title": "06 How to leave Opponent’s Arm Block on Double Leg or Single Leg",
+        "points": [
+          "How to move and left opponent's Arm Block",
+          "Single Slap catching Single Leg",
+          "Snap Down",
+          "Snap Down hitting on wrist",
+          "Double Leg - Feint with Level Dropping",
+          "Double Leg - Double slap",
+          "Duck Under leaving Opponent's Block",
+          "Knee Tap and Hand on Neck"
+        ]
+      },
+      {
+        "title": "07 Combinations - Single Leg ➡️ Double Leg",
+        "points": [
+          "Single Double Leg - Knees on the mat",
+          "Simple combination with the knees on the mat",
+          "Single Double Leg - Head Outside",
+          "Single Double Leg - Knee Tap",
+          "Single - Double Leg Barzegar"
+        ]
+      },
+      {
+        "title": "08 Takedowns from Back",
+        "points": [
+          "Reverse Tai Otoshi",
+          "Locking knee going forward",
+          "Pulling back with foot sole on opponent's heel",
+          "Pulling back with hands on hip",
+          "De Ashi Harai or \"Sweep\"",
+          "Side Suplex",
+          "closing elbow forcing opponent's thigh"
+        ]
+      },
+      {
+        "title": "09 Attacks on Bodylock",
+        "points": [
+          "Basic Bodylock starting from Single Leg",
+          "Bodylock by using 10 fingers grip Turning hip with Leg inside",
+          "Bodylock taking a side step locking opponent's leg",
+          "Bodylock turning Hip - Grip over opponent's shoulder",
+          "Bodylock on Dog Fight by using 10 Fingers Grip",
+          "Bodylock en el Dog Fight Brazo sobre el hombro del oponente",
+          "Limp Arm or Whip - Uchimata and Harai Goshi Counterattack",
+          "Bodylock on Dog Fight - Hand on Ankle"
+        ]
+      },
+      {
+        "title": "10 Slide By",
+        "points": [
+          "Slide By - Hand inside",
+          "Slide By - Hand Out",
+          "Slide by - Hand inside Raising the outer leg",
+          "Slide By - Hand Out Raising the outer leg",
+          "Hip Inside",
+          "Slide By - Snap Down with change base"
+        ]
+      },
+      {
+        "title": "11 Two in One",
+        "points": [
+          "Two in One turning by using Kimura Grip",
+          "Two in One taking down on Double Leg",
+          "Two in One Defense pulling opponent's elbow going back to Two in One",
+          "Two in One throwing arm to the side",
+          "Two in one going to the back",
+          "Two in One with Duck Under",
+          "Two in One hitting up opponent's arm",
+          "Two in One turning hip with Leg in the middle to the back",
+          "Two in One with Single Leg",
+          "Two in One Defense holding elbow and catching Underhook",
+          "Two in One Defense turning to the opposite side",
+          "Two in One Defense with Arm Drag arm and Leg inside",
+          "Two in One Defense - Advanced Grip"
+        ]
+      },
+      {
+        "title": "12 Arm Drag",
+        "points": [
+          "Basic Arm Drag",
+          "Russian Arm Drag I Defensive Arm Drag",
+          "Arm Drag - Downwards",
+          "Arm Drag - Kouchi Gake",
+          "Arm Drag - Hook Out"
+        ]
+      },
+      {
+        "title": "13 Duck Under",
+        "points": [
+          "Duck Under on Clinch",
+          "Duck Under with Single Leg",
+          "Duck Under - Hand on the mat"
+        ]
+      },
+      {
+        "title": "14 Throw By",
+        "points": [
+          "Throw By",
+          "Throw By with De Ashi Harai",
+          "Throw By with Single Leg",
+          "Throw By Raising Your out Leg"
+        ]
+      },
+      {
+        "title": "15 Single Leg Defense",
+        "points": [
+          "Turkish Defense fake and Ankle Pick",
+          "Turkish Defense - Grip on Waist"
+        ]
+      },
+      {
+        "title": "16 Single Leg Defense",
+        "points": [
+          "High Head with forehead in the middle",
+          "Applying pressure forward on Overhook",
+          "Opponent with head down and hugging your leg",
+          "Defending with Overhook and Kneebar",
+          "Shoulder on Chin",
+          "Single Leg Defense by Using Kimura",
+          "Lifting Knee",
+          "Sumi Gaeshi",
+          "Cow Catcher",
+          "Turkish Defense or Reverse Turkish",
+          "Opponent pulling on Ankle - Slidind",
+          "pulling heel - Sliding 2",
+          "defense on the ground",
+          "Defense on the ground - Opponent pulling his heel twisting your knee",
+          "Crossface with hand on opponent's ankle and triceps"
+        ]
+      },
+      {
+        "title": "17 Double Leg Defense",
+        "points": [
+          "Double Leg Defense - Cross Face",
+          "Defense on the ground by using both hands on thigh",
+          "Double Leg Defense Hitting Hip"
+        ]
+      },
+      {
+        "title": "18 Neck Defense",
+        "points": [
+          "Neck Defense - Quick 3rd Step",
+          "Guilhotine Choke Defense by using Double Leg hand inside",
+          "Jumping for Outside - Doing a Bridge",
+          "Neck Defense with Arm Drag",
+          "Hands on Elbow and Thigh/Hip",
+          "Reverse Turn",
+          "Arm Triangle Defense turning around"
+        ]
+      },
+      {
+        "title": "19 Back Defense",
+        "points": [
+          "Granby Roll",
+          "Reversion locking elbow",
+          "Granby Roll with Kneebar",
+          "Granby Roll on Seat Belt",
+          "Granby Roll - Stretched Body",
+          "Standind Switch",
+          "Back Defense standing breaking the grip with hip forward",
+          "Standing Granby Roll",
+          "Stanting Cranby Roll with Kneebar"
+        ]
+      },
+      {
+        "title": "20 Bodylock Defense",
+        "points": [
+          "Bodylock Defense",
+          "Bodylock Defense On Side"
+        ]
+      }
+    ]
   }
 }

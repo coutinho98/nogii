@@ -193,5 +193,248 @@
     "privacy_policy": "Política de Privacidad",
     "cookies_policy": "Política de Cookies",
     "terms_of_service": "Términos de Servicio"
+  },
+  "course_content": {
+    "title": "¿Qué aprenderás en este curso?",
+    "topics": [
+      {
+        "title": "01 Principales derribos que todo grappler debe saber",
+        "points": [
+          "Doble pierna 3 pasos",
+          "Derribo simple en pierna sencilla",
+          "Pierna sencilla lateral simple",
+          "Tai Otoshi inverso desde la espalda",
+          "Slide By - Mano por dentro",
+          "Defensa del cuello usando Arm Drag",
+          "Bodylock básico desde pierna sencilla"
+        ]
+      },
+      {
+        "title": "02 Doble pierna - Principales variaciones",
+        "points": [
+          "Doble pierna 3 pasos",
+          "Doble pierna baja desde el agarre de cuello y tríceps",
+          "Doble pierna yendo a la espalda",
+          "Doble pierna tirando de la pierna opuesta",
+          "Arbues simple"
+        ]
+      },
+      {
+        "title": "03 Derribos desde pierna sencilla",
+        "points": [
+          "Derribo simple",
+          "Pierna sencilla - Hombro en el muslo",
+          "Pierna sencilla - Cruzado o brazo a 90°",
+          "Agarre en la cadera",
+          "Mano en el cuello",
+          "Mano en el cuello 2",
+          "Giro externo con la mano en la rodilla",
+          "Crank o mano en el talón",
+          "Makhachev 1",
+          "Makhachev 2",
+          "High Crotch",
+          "High Single Leg",
+          "Codo alto"
+        ]
+      },
+      {
+        "title": "04 Pierna sencilla - Principales variaciones",
+        "points": [
+          "Pierna sencilla de pie, frente en el medio de la costilla",
+          "Pierna sencilla lateral con desplazamiento. Agarres de cuello y tríceps",
+          "Pierna sencilla lateral",
+          "Pierna sencilla en la pierna de atrás",
+          "Pierna sencilla lateral cambiando de base - Bases iguales - Derecha vs derecha o izquierda vs izquierda",
+          "Ankle Pick de pie",
+          "Ankle Pick",
+          "Ankle Pick inversa",
+          "Collar Tie → Ankle Pick",
+          "Ankle Pick externa"
+        ]
+      },
+      {
+        "title": "05 Cómo salir del Sprawl en doble pierna y pierna sencilla",
+        "points": [
+          "Doble pierna mano en el tobillo",
+          "Arbues - Cabeza por dentro",
+          "Cabeza por dentro en ambas piernas mirando hacia arriba",
+          "Duck Under",
+          "Finta de Arbues girando la cabeza hacia adentro",
+          "Pierna sencilla lateral con el látigo"
+        ]
+      },
+      {
+        "title": "06 Cómo salir del bloqueo de brazo del oponente en doble pierna o pierna sencilla",
+        "points": [
+          "Cómo mover y dejar el bloqueo de brazo del oponente",
+          "Palmada simple cogiendo la pierna sencilla",
+          "Snap Down",
+          "Snap Down golpeando la muñeca",
+          "Doble pierna - Finta con la caída de nivel",
+          "Doble pierna - Doble palmada",
+          "Duck Under saliendo del bloqueo del oponente",
+          "Knee Tap y mano en el cuello"
+        ]
+      },
+      {
+        "title": "07 Combinaciones - Pierna sencilla ➡️ doble pierna",
+        "points": [
+          "Pierna sencilla doble pierna - Rodillas en el tatame",
+          "Combinación simple con las rodillas en el tatame",
+          "Pierna sencilla doble pierna - Cabeza por fuera",
+          "Pierna sencilla doble pierna - Knee Tap",
+          "Pierna sencilla - Doble pierna Barzegar"
+        ]
+      },
+      {
+        "title": "08 Derribos desde la espalda",
+        "points": [
+          "Tai Otoshi inverso",
+          "Bloqueando la rodilla yendo hacia adelante",
+          "Tirando hacia atrás con la planta del pie en el talón del oponente",
+          "Tirando hacia atrás con las manos en la cadera",
+          "De Ashi Harai o \"Barrida\"",
+          "Suplex lateral",
+          "Cerrando el codo forzando el muslo del oponente"
+        ]
+      },
+      {
+        "title": "09 Ataques en Bodylock",
+        "points": [
+          "Bodylock básico partiendo de la pierna sencilla",
+          "Bodylock usando el agarre de 10 dedos girando la cadera con la pierna por dentro",
+          "Bodylock dando un paso lateral bloqueando la pierna del oponente",
+          "Bodylock girando la cadera - Agarre por encima del hombro del oponente",
+          "Bodylock en el Dog Fight usando el agarre de 10 dedos",
+          "Bodylock en el Dog Fight brazo sobre el hombro del oponente",
+          "Limp Arm o látigo - Contraataque de Uchimata y Harai Goshi",
+          "Bodylock en el Dog Fight - Mano en el tobillo"
+        ]
+      },
+      {
+        "title": "10 Slide By",
+        "points": [
+          "Slide By - Mano por dentro",
+          "Slide By - Mano por fuera",
+          "Slide by - Mano por dentro levantando la pierna exterior",
+          "Slide By - Mano por fuera levantando la pierna exterior",
+          "Cadera por dentro",
+          "Slide By - Snap Down con cambio de base"
+        ]
+      },
+      {
+        "title": "11 Two in One",
+        "points": [
+          "Two in One girando usando el agarre de Kimura",
+          "Two in One derribando en doble pierna",
+          "Two in One defensa tirando del codo del oponente volviendo a Two in One",
+          "Two in One lanzando el brazo hacia un lado",
+          "Two in one yendo a la espalda",
+          "Two in One con Duck Under",
+          "Two in One golpeando hacia arriba en el brazo del oponente",
+          "Two in One girando la cadera con la pierna en el medio hacia la espalda",
+          "Two in One con pierna sencilla",
+          "Two in One defensa sosteniendo el codo y agarrando el Underhook",
+          "Two in One defensa girando hacia el lado opuesto",
+          "Two in One defensa con Arm Drag brazo y pierna por dentro",
+          "Two in One defensa - Agarre avanzado"
+        ]
+      },
+      {
+        "title": "12 Arm Drag",
+        "points": [
+          "Arm Drag Básico",
+          "Arm Drag Ruso I Arm Drag defensivo",
+          "Arm Drag - Hacia abajo",
+          "Arm Drag - Kouchi Gake",
+          "Arm Drag - Hook Out"
+        ]
+      },
+      {
+        "title": "13 Duck Under",
+        "points": [
+          "Duck Under en Clinch",
+          "Duck Under con pierna sencilla",
+          "Duck Under - Mano en el tatame"
+        ]
+      },
+      {
+        "title": "14 Throw By",
+        "points": [
+          "Throw By",
+          "Throw By con De Ashi Harai",
+          "Throw By con pierna sencilla",
+          "Throw By levantando tu pierna exterior"
+        ]
+      },
+      {
+        "title": "15 Defensa de pierna sencilla",
+        "points": [
+          "Defensa turca de finta y Ankle Pick",
+          "Defensa turca - Agarre en la cintura"
+        ]
+      },
+      {
+        "title": "16 Defensa de pierna sencilla",
+        "points": [
+          "Cabeza alta con la frente en el medio",
+          "Aplicando presión hacia adelante en Overhook",
+          "Oponente con la cabeza agachada y abrazando tu pierna",
+          "Defendiendo con Overhook y Kneebar",
+          "Hombro en la barbilla",
+          "Defensa de pierna sencilla usando Kimura",
+          "Levantando la rodilla",
+          "Sumi Gaeshi",
+          "Cow Catcher",
+          "Defensa turca o turca inversa",
+          "Oponente tirando del tobillo - Deslizándose",
+          "Tirando del talón - Deslizándose 2",
+          "Defensa en el suelo",
+          "Defensa en el suelo - Oponente tirando de su talón torciendo tu rodilla",
+          "Crossface con la mano en el tobillo y el tríceps del oponente"
+        ]
+      },
+      {
+        "title": "17 Defensa de doble pierna",
+        "points": [
+          "Defensa de doble pierna - Cross Face",
+          "Defensa en el suelo usando ambas manos en el muslo",
+          "Defensa de doble pierna golpeando la cadera"
+        ]
+      },
+      {
+        "title": "18 Defensa de cuello",
+        "points": [
+          "Defensa de cuello - 3er paso rápido",
+          "Defensa de estrangulamiento de guillotina usando doble pierna con la mano por dentro",
+          "Saltando hacia afuera - Haciendo un puente",
+          "Defensa de cuello con Arm Drag",
+          "Manos en el codo y el muslo/cadera",
+          "Giro inverso",
+          "Defensa de triángulo de brazo girando alrededor"
+        ]
+      },
+      {
+        "title": "19 Defensa de espalda",
+        "points": [
+          "Granby Roll",
+          "Reversión bloqueando el codo",
+          "Granby Roll con Kneebar",
+          "Granby Roll en el cinturón de seguridad",
+          "Granby Roll - Cuerpo estirado",
+          "Cambio de pie",
+          "Defensa de espalda de pie rompiendo el agarre con la cadera hacia adelante",
+          "Granby Roll de pie",
+          "Granby Roll de pie con Kneebar"
+        ]
+      },
+      {
+        "title": "20 Defensa de Bodylock",
+        "points": [
+          "Defensa de Bodylock",
+          "Defensa de Bodylock en el lateral"
+        ]
+      }
+    ]
   }
 }

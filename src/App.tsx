@@ -11,6 +11,7 @@ import Footer from './components/footer'
 import LegalPage from './components/legal';
 import Events from './pages/events'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CourseContent from './components/course';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <PricingSection className="bg-white dark:bg-black" />
       <WhatsApp className="bg-gray-100 dark:bg-gray-900 dark:text-white" />
       <FaqSection className="bg-white dark:bg-black" />
+      <CourseContent className="bg-gray-100 dark:bg-gray-900" />
       <Footer />
     </div>
   );
