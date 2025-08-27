@@ -4,7 +4,7 @@
         "description_part1": "Descubra como dominar as quedas e finalmente impor seu jogo no jiu-jitsu com o",
         "description_part2": "Campeão Brasileiro de Wrestling em 2018",
         "video_not_supported": "Seu navegador não suporta a tag de vídeo.",
-        "button_machine": "Virar uma máquina de derrubar",
+        "button_machine": "Quero virar uma máquina de derrubar",
         "button_content": "Conheça o conteúdo"
     },
     "pain_points": {
@@ -123,17 +123,20 @@
             "Do básico ao avançado",
             "Acesso vitalício",
             "Certificado de conclusão",
-            "Garantia incondicional de 7 dias",
             "Suporte para dúvidas",
             "Atualizações grátis"
         ],
-        "button_text": "Quero aprender a derrubar!"
+        "button_text": "Quero virar uma máquina de derrubar"
     },
     "whatsapp_section": {
         "title": "Ainda tem dúvidas se o curso é para você?",
         "description": "Fale agora no WhatsApp com a minha equipe e vamos tirar todas as dúvidas que você ainda tem sobre o curso.",
         "button_text": "Falar no WhatsApp"
     },
+    "guarantee_text": {
+        "title": "Garantia de 7 dias"
+    },
+    
     "faq_section": {
         "title": "Dúvidas Frequentes",
         "items": [

@@ -1,14 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=Kalam:wght@300;400;700&family=Montserrat:ital@0;1&display=swap');
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @utility font-montserrat {
   font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@utility font-kalam {
+  font-family: "Kalam", cursive;
+}
+
+@utility font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html,
 body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
+
+ 
+  transform-style: flat;
+
   transition: all 0.3s ease;
 }

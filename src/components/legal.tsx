@@ -8,7 +8,7 @@ const LegalPage = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
-  }, []); 
+  }, []);
 
   return (
     <section className="bg-black text-gray-300 py-16">
@@ -24,7 +24,7 @@ const LegalPage = () => {
         </div>
 
         <div id="politica-privacidade" className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold  text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent mb-6">
             POLÍTICAS DE PRIVACIDADE
           </h2>
           <div className="space-y-4">
@@ -41,7 +41,7 @@ const LegalPage = () => {
         </div>
 
         <div id="politica-cookies" className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent mb-6">
             POLÍTICAS DE COOKIES
           </h2>
           <div className="space-y-4">
@@ -52,7 +52,7 @@ const LegalPage = () => {
         </div>
 
         <div id="termos-servicos" className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent mb-6">
             TERMOS DE SERVIÇOS
           </h2>
           <div className="space-y-4">

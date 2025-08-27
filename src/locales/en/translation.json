@@ -4,7 +4,7 @@
     "description_part1": "Discover how to master takedowns and finally assert your jiu-jitsu game with the",
     "description_part2": "2018 Brazilian Wrestling Champion",
     "video_not_supported": "Your browser does not support the video tag.",
-    "button_machine": "Become a collapse machine",
+    "button_machine": "I want to become a collapse machine",
     "button_content": "Know the content"
   },
   "pain_points": {
@@ -115,7 +115,7 @@
   "pricing_section": {
     "from_price": "from",
     "to_price": "for only",
-    "installments_text": "12x of",
+    "installments_text": "",
     "or_text": "or",
     "cash_text": "cash",
     "limited_offer": "Exclusive offer — valid for a limited time",
@@ -123,16 +123,18 @@
       "From basic to advanced",
       "Lifetime access",
       "Certificate of completion",
-      "7-day unconditional guarantee",
       "Support for questions",
       "Free updates"
     ],
-    "button_text": "I want to learn how to take down!"
+    "button_text": "I want to become a collapse machine"
   },
   "whatsapp_section": {
     "title": "Still have doubts if the course is for you?",
     "description": "Talk to my team on WhatsApp now and we'll clear up any doubts you still have about the course.",
     "button_text": "Talk on WhatsApp"
+  },
+  "guarantee_text": {
+    "title": "7-day guarantee"
   },
   "faq_section": {
     "title": "Frequently Asked Questions",

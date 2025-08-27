@@ -74,25 +74,27 @@ const PricingSection = ({ className }: { className?: string }) => {
     fullPrice = 197;
   } else {
     kiwifyUrl += `?lang=${lang}`;
-    installmentsPrice = 4.70;
+    installmentsPrice = 47;
     fullPrice = 47;
   }
 
   const priceParts = splitPriceParts(installmentsPrice, lang);
 
+  const showFullPrice = fullPrice !== installmentsPrice;
+
   return (
-    <section className={`relative overflow-hidden py-16 ${className}`}>
+    <section id="pricing" className={`relative overflow-hidden py-16 ${className}`}>
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-center gap-10 relative z-10 max-w-5xl">
 
         <div className="text-center md:text-left flex-1 md:w-1/2">
-          <p className="text-lg">
+          <p className="text-lg dark:text-white">
             {t('pricing_section.from_price')}{" "}
-            <span className="line-through">{formatPrice(497, lang)}</span>
+            <span className="line-through dark:text-white">{formatPrice(497, lang)}</span>
           </p>
-          <p className="text-lg">{t('pricing_section.to_price')}</p>
-          <p className="text-3xl font-bold tracking-tight">{t('pricing_section.installments_text')}</p>
+          <p className="text-lg dark:text-white">{t('pricing_section.to_price')}</p>
+          <p className="text-3xl dark:text-white font-bold tracking-tight">{t('pricing_section.installments_text')}</p>
 
-          <p className="relative inline-flex items-start text-7xl font-extrabold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent leading-tight drop-shadow-lg">
+          <p className="relative inline-flex items-start text-7xl font-extrabold text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent leading-tight drop-shadow-lg">
             {priceParts.symbolBefore}{priceParts.integerPart}
             {priceParts.decimalPart && (
               <span className="absolute top-1 text-3xl">{priceParts.decimalPart}</span>
@@ -100,13 +102,15 @@ const PricingSection = ({ className }: { className?: string }) => {
             {priceParts.symbolAfter}
           </p>
 
-          <p className="mt-2 text-lg text-black dark:text-white">
-            {t('pricing_section.or_text')}{" "}
-            <span className="text-4xl font-bold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
-              {formatPrice(fullPrice, lang)}
-            </span>
-            <span className="align-top text-sm "> {t('pricing_section.cash_text')}</span>
-          </p>
+          {showFullPrice && (
+            <p className="mt-2 text-lg text-black dark:text-white">
+              {t('pricing_section.or_text')}{" "}
+              <span className="text-4xl font-bold text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">
+                {formatPrice(fullPrice, lang)}
+              </span>
+              <span className="align-top text-sm "> {t('pricing_section.cash_text')}</span>
+            </p>
+          )}
 
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">
             {t('pricing_section.limited_offer')}
@@ -127,12 +131,12 @@ const PricingSection = ({ className }: { className?: string }) => {
           </ul>
 
           <button
-           onClick={() => window.open(kiwifyUrl, "_blank", "noopener,noreferrer")}
+            onClick={() => window.open(kiwifyUrl, "_blank", "noopener,noreferrer")}
             className="cursor-pointer mt-6 w-full flex items-center justify-center gap-2
-             bg-gradient-to-r from-yellow-200 to-orange-500 text-black text-lg
-             font-bold py-4 px-8 rounded-lg shadow-lg
-             transition-all duration-500 ease-in-out
-             hover:from-yellow-300 hover:to-orange-500 hover:shadow-xl"
+              bg-gradient-to-r from-yellow-200 to-orange-500 text-black text-lg
+              font-bold py-4 px-8 rounded-lg shadow-lg
+              transition-all duration-500 ease-in-out
+              hover:from-yellow-300 hover:to-orange-500 hover:shadow-xl"
           >
             {t('pricing_section.button_text')}
           </button>

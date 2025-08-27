@@ -64,7 +64,7 @@ const CourseModulesSection = ({ className }: { className?: string }) => {
         <section id="conteudo" className={`py-10 ${className}`}>
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">
+                    <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">
                         {t('course_modules.title')}
                     </h2>
 
@@ -76,13 +76,12 @@ const CourseModulesSection = ({ className }: { className?: string }) => {
                                     alt={module.alt}
                                     className="w-full h-auto rounded-lg mb-4 transition-transform duration-300 transform group-hover:scale-105"
                                 />
-                                <h3 className="text-xl md:text-2xl font-bold text-yellow-600 dark:text-yellow-500">
+                                <h3 className="text-xl md:text-2xl font-bold text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">
                                     {module.title}
                                 </h3>
                                 <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                                     {module.description}
                                 </p>
-                                {/* Verifica se why_it_works existe antes de renderizar */}
                                 {module.why_it_works && module.why_it_works_description && (
                                     <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                                         <span className="font-bold text-gray-900 dark:text-white">{module.why_it_works}:</span> {module.why_it_works_description}

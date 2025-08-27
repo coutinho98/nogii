@@ -10,7 +10,7 @@ const PainPointsSection = ({ className }: { className?: string }) => {
                 <div className="max-w-5xl mx-auto">
 
                     <div className="text-center md:text-left">
-                        <h2 className="font-montserrat text-3xl md:text-4xl font-extrabold leading-tight bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">
+                        <h2 className="font-montserrat text-3xl md:text-4xl font-extrabold leading-tight text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">
                             {t('pain_points.title')}
                         </h2>
                     </div>
@@ -28,7 +28,7 @@ const PainPointsSection = ({ className }: { className?: string }) => {
                 </div>
 
                 <div className="max-w-5xl mx-auto mt-10 text-center">
-                    <p className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent px-4">
+                    <p className="text-xl sm:text-2xl font-bold text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent px-4">
                         {t('pain_points.recognition_text')}
                     </p>
                 </div>

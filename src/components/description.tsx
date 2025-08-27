@@ -13,25 +13,25 @@ const InstructorBioSection = ({ className }: { className?: string }) => {
             <p className="text-xl md:text-2xl font-bold text-gray-600 dark:text-gray-300">
               {t('instructor_bio.greeting')}
             </p>
-            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent mt-2">
+            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent mt-2">
               {t('instructor_bio.name')}
             </h2>
             <p className="mt-2 text-lg md:text-xl font-bold text-gray-500 dark:text-gray-400">
               {t('instructor_bio.title')}
             </p>
             <p className="mt-6 text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t('instructor_bio.description_part1')} <span className="font-bold bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">{t('instructor_bio.description_highlight1')}</span> {t('instructor_bio.description_part2')} <span className="font-bold bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">{t('instructor_bio.description_highlight2')}</span> {t('instructor_bio.description_part3')}
+              {t('instructor_bio.description_part1')} <span className="font-boldtext-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">{t('instructor_bio.description_highlight1')}</span> {t('instructor_bio.description_part2')} <span className="font-boldtext-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">{t('instructor_bio.description_highlight2')}</span> {t('instructor_bio.description_part3')}
             </p>
             <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t('instructor_bio.description_part4')} <span className="font-bold bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">{t('instructor_bio.description_highlight3')}</span> {t('instructor_bio.description_part5')}
+              {t('instructor_bio.description_part4')} <span className="font-boldtext-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">{t('instructor_bio.description_highlight3')}</span> {t('instructor_bio.description_part5')}
             </p>
             <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t('instructor_bio.description_part6')} <span className="font-bold bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">{t('instructor_bio.description_highlight4')}</span> {t('instructor_bio.description_part7')}
+              {t('instructor_bio.description_part6')} <span className="font-boldtext-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">{t('instructor_bio.description_highlight4')}</span> {t('instructor_bio.description_part7')}
             </p>
             <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t('instructor_bio.description_part8')} <span className="font-bold bg-gradient-to-r from-yellow-300 to-orange-500 bg-clip-text text-transparent">{t('instructor_bio.description_highlight5')}</span> {t('instructor_bio.description_part9')}
+              {t('instructor_bio.description_part8')} <span className="font-boldtext-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">{t('instructor_bio.description_highlight5')}</span> {t('instructor_bio.description_part9')}
             </p>
-            <p className="mt-6 text-yellow-500 font-bold text-xl md:text-2xl">
+            <p className="mt-6 text-orange-600 font-bold text-xl md:text-2xl">
               {t('instructor_bio.call_to_action')}
             </p>
           </div>
@@ -40,7 +40,7 @@ const InstructorBioSection = ({ className }: { className?: string }) => {
             <img
               src={Wilgner}
               alt={t('instructor_bio.name')}
-              className="w-96 h-96 rounded-lg shadow-xl object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl"
+              className="w-120 h-120 rounded-lg shadow-xl object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl"
             />
           </div>
         </div>

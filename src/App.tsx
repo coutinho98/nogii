@@ -9,17 +9,12 @@ import FaqSection from './components/faq'
 import TestimonialSection from './components/depoiments'
 import Footer from './components/footer'
 import LegalPage from './components/legal';
-import LanguageSwitcher from './components/LanguageSwitcher';
-import ThemeSwitcher from './components/ThemeSwitcher';
+import Events from './pages/events'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App min-h-screen transition-colors duration-300">
-      <div className="flex-col  fixed top-6 right-6 z-50 flex items-center space-x-2">
-        <ThemeSwitcher />
-        <LanguageSwitcher />
-      </div>
+    <div className="App min-h-screen">
       <VideoSection className="bg-white dark:bg-black" />
       <PainPointsSection className="bg-gray-100 dark:bg-gray-900" />
       <BenefitsSection className="bg-white dark:bg-black" />
@@ -40,6 +35,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/legal" element={<LegalPage />} />
+        <Route path='/eventos' element={<Events />} />
       </Routes>
     </Router>
   );

@@ -3,7 +3,6 @@ import { useSpring, animated, config } from '@react-spring/web';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
 const ThemeSwitcher = () => {
-    // Verifica o tema inicial baseado no localStorage ou preferência do sistema
     const [isDark, setIsDark] = useState(() => {
         if (typeof window === 'undefined') return false;
 
@@ -40,7 +39,7 @@ const ThemeSwitcher = () => {
     return (
         <button
             onClick={toggleTheme}
-            className="ml-2 p-2 rounded-full bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300"
+            className=" p-2 rounded-full bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 hover:bg-gray-700 dark:hover:bg-gray-300 transition-all duration-300"
             aria-label={`Switch to ${isDark ? 'light' : 'dark'} theme`}
         >
             <animated.div style={props}>

@@ -4,7 +4,7 @@
     "description_part1": "Descubre cómo dominar los derribos y consolida tu dominio del jiu-jitsu con el",
     "description_part2": "campeón brasileño de lucha libre de 2018",
     "video_not_supported": "Tu navegador no soporta la etiqueta de vídeo.",
-    "button_machine": "Conviértete en una máquina de derribar",
+    "button_machine": "Quiero convertirme en una máquina de colapso",
     "button_content": "Conoce el contenido"
   },
   "pain_points": {
@@ -115,7 +115,7 @@
   "pricing_section": {
     "from_price": "de",
     "to_price": "por solo",
-    "installments_text": "12x de",
+    "installments_text": "",
     "or_text": "o",
     "cash_text": "al contado",
     "limited_offer": "Oferta exclusiva — válida por tiempo limitado",
@@ -123,16 +123,18 @@
       "De lo básico a lo avanzado",
       "Acceso de por vida",
       "Certificado de finalización",
-      "Garantía incondicional de 7 días",
       "Soporte para dudas",
       "Actualizaciones gratuitas"
     ],
-    "button_text": "¡Quiero aprender a derribar!"
+    "button_text": "Quiero convertirme en una máquina de colapso."
   },
   "whatsapp_section": {
     "title": "¿Aún tienes dudas si el curso es para ti?",
     "description": "Habla ahora por WhatsApp con mi equipo y aclararemos todas las dudas que aún tengas sobre el curso.",
     "button_text": "Hablar por WhatsApp"
+  },
+  "guarantee_text": {
+    "title": "Garantía de 7 días"
   },
   "faq_section": {
     "title": "Preguntas Frecuentes",

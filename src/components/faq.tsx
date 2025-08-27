@@ -39,7 +39,7 @@ const FaqSection = ({ className }: { className?: string }) => {
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-start">
           <div className="md:w-1/3">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-center md:text-left mb-6 md:mb-0 bg-gradient-to-r from-yellow-200 to-orange-500 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-center md:text-left mb-6 md:mb-0 text-orange-600 dark:bg-gradient-to-r dark:from-yellow-200 dark:to-orange-500 dark:bg-clip-text dark:text-transparent">
               {t('faq_section.title')}
             </h2>
           </div>
