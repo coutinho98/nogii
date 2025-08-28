@@ -198,241 +198,136 @@
         "title": "O que você aprenderá neste curso?",
         "topics": [
             {
-                "title": "01 Principais quedas que todo grappler deve saber",
+                "title": "01 Movimentos Básicos",
                 "points": [
-                    "Double Leg 3 Passos",
-                    "Queda simples na Single Leg",
-                    "Single Single Lateral",
-                    "Tai Otoshi reverso de Costas",
-                    "Slide By - Mão por dentro",
-                    "Defesa de Pescoço usando Arm Drag",
-                    "Bodylock básico partindo da Single Leg"
+                    "Aprenda a Previnir Lesões e Maximizar seu Desempenho",
+                    "Double Leg três passos - Entrada básica",
+                    "Single Leg Cabeça por fora",
+                    "Single Leg cabeça no meio e por dentro - Evitando Guilhotina"
                 ]
             },
             {
-                "title": "02 Double Leg - Principais variações",
+                "title": "02 Truques Básicos",
                 "points": [
-                    "Double Leg 3 Passos",
-                    "Double Leg Baixa da Gola e Tríceps",
-                    "Double Leg indo para as Costas",
-                    "Double Leg puxando a perna oposta",
-                    "Arbues Simples"
+                    "Double Leg saindo do Sprawl no Ombro",
+                    "Deslocamento Básico"
                 ]
             },
             {
-                "title": "03 Quedas da Single Leg",
+                "title": "03 Defesas para Iniciantes",
                 "points": [
-                    "Queda simples",
-                    "Single Leg - Ombro na coxa",
-                    "Single Leg - Cruzada ou Braço em 90°",
-                    "Pegada no Quadril",
-                    "Mão na Gola",
-                    "Mão na Gola 2",
-                    "Giro externo com a mão no joelho",
-                    "Crank ou Mão no Calcanhar",
-                    "Makhachev 1",
-                    "Makhachev 2",
-                    "High Crotch",
-                    "High Single Leg",
-                    "Cotovelo Alto"
+                    "Defesa de Double Leg Crossface",
+                    "3 Defesas de Single"
                 ]
             },
             {
-                "title": "04 Single Leg - Principais variações",
+                "title": "04 Drills",
                 "points": [
-                    "Single Leg em pé, Testa no meio da Costela",
-                    "Single Leg Lateral com Deslocamento. Gola e Tríceps",
-                    "Single Leg Lateral",
-                    "Single Leg na perna de trás",
-                    "Single Leg Lateral trocando a base - Bases Iguais - Direita com Direita ou Esquerda com Esquerda",
-                    "Ankle Pick em pé",
+                    "Entrada Contínua - Melhore suas entradas",
+                    "Drill Troca de Nivel",
+                    "Drill Pegada Russa",
+                    "Drill Arm Drag",
+                    "Drill Seoi com faixa ou elástico",
+                    "Drill Elástico"
+                ]
+            },
+            {
+                "title": "05 Entradas Intermediárias",
+                "points": [
+                    "As 4 Principais Entradas de Queda",
+                    "Entrada Arco e Flecha",
                     "Ankle Pick",
                     "Ankle Pick Reverso",
-                    "Collar Tie → Ankle Pick",
-                    "Ankle Pick Externa"
+                    "Entrada Lateral",
+                    "Entrada de Single Leg em Pé",
+                    "Double Leg em Pé"
                 ]
             },
             {
-                "title": "05 Como sair do Sprawl na Double Leg e Single Leg",
+                "title": "06 Defesas Intermediárias",
                 "points": [
-                    "Double Leg mão no Tornozelo",
-                    "Arbues - Cabeça por dentro",
-                    "Cabeça por dentro nas duas pernas olhando para cima",
-                    "Duck Under",
-                    "Finta de Arbues virando a Cabeça pra dentro",
-                    "Single Leg Lateral com o Chicote"
+                    "Defesas de Cinturada",
+                    "6 Defesass de Guilhotina - Básicas, Intermediárias e Avançadas"
                 ]
             },
             {
-                "title": "06 Como sair do Bloqueio de Braço do adversário na Double Leg ou Single Leg",
+                "title": "07 Domínios no Headlock",
                 "points": [
-                    "Como se movimentar e sair do Bloqueio de Braço",
-                    "Tapa na Single pegando a Single Leg",
-                    "Snap Down",
-                    "Snap Down batendo no punho",
-                    "Double Leg - Finta com a queda de nível",
-                    "Double Leg - Tapa duplo",
-                    "Duck Under saindo do Bloqueio do adversário",
-                    "Knee Tap e Mão no Pescoço"
+                    "Underhook: ataques, defesas e combinações",
+                    "Ataques no Pescoço"
                 ]
             },
             {
-                "title": "07 Combinações - Single Leg ➡️ Double Leg",
+                "title": "08 Bodylock e Posições no Clinch",
                 "points": [
-                    "Single Double Leg - Joelhos no chão",
-                    "Combinação simples com os joelhos no chão",
-                    "Single Double Leg - Cabeça por fora",
-                    "Single Double Leg - Knee Tap",
-                    "Single - Double Leg Barzegar"
+                    "Ataques na Cinturada",
+                    "Clinch: Ataques e Combinações",
+                    "Pegada Russa: Ataques, Combinações e Defesas",
+                    "Single Double - Combinações"
                 ]
             },
             {
-                "title": "08 Quedas pelas Costas",
+                "title": "09 Ataques no Single Leg",
                 "points": [
-                    "Tai Otoshi Reverso",
-                    "Travando o joelho indo para frente",
-                    "Puxando para trás com a sola do pé no calcanhar do adversário",
-                    "Puxando para trás com as mãos no quadril",
-                    "De Ashi Harai ou \"Rasteira\"",
-                    "Suplex Lateral",
-                    "Fechando o cotovelo forçando a coxa do adversário"
+                    "Ataques a partir do Single Leg"
                 ]
             },
             {
-                "title": "09 Ataques no Bodylock",
+                "title": "10 Truques Intermediários",
                 "points": [
-                    "Bodylock básico partindo da Single Leg",
-                    "Bodylock usando a pegada de 10 dedos Virando o quadril com a Perna por dentro",
-                    "Bodylock dando um passo lateral travando a perna do adversário",
-                    "Bodylock virando o Quadril - Pegada por cima do ombro do adversário",
-                    "Bodylock no Dog Fight usando a Pegada de 10 dedos",
-                    "Bodylock no Dog Fight Braço por cima do ombro do adversário",
-                    "Limp Arm ou Chicote - Contra ataque de Uchimata e Harai Goshi",
-                    "Bodylock no Dog Fight - Mão no Tornozelo"
+                    "Posições Saindo do Sprawl no Ombro",
+                    "Saindo do Bloqueio do Braço"
                 ]
             },
             {
-                "title": "10 Slide By",
+                "title": "11 Arm Drag e Variações",
                 "points": [
-                    "Slide By - Mão por dentro",
-                    "Slide By - Mão por fora",
-                    "Slide by - Mão por dentro Levantando a perna externa",
-                    "Slide By - Mão por fora Levantando a perna externa",
-                    "Quadril por dentro",
-                    "Slide By - Snap Down com troca de base"
+                    "Tipos de Arm Drag",
+                    "Arm Drag: Combinações com outras posições"
                 ]
             },
             {
-                "title": "11 Two in One",
+                "title": "12 Suplex e Lateral Drop",
                 "points": [
-                    "Two in One virando usando a pegada de Kimura",
-                    "Two in One derrubando na Double Leg",
-                    "Two in One Defesa puxando o cotovelo do adversário voltando para Two in One",
-                    "Two in One jogando o braço para o lado",
-                    "Two in One indo para as costas",
-                    "Two in One com Duck Under",
-                    "Two in One batendo pra cima no braço do adversário",
-                    "Two in One virando o quadril com a Perna no meio para as costas",
-                    "Two in One com Single Leg",
-                    "Two in One Defesa segurando o cotovelo e pegando o Underhook",
-                    "Two in One Defesa virando para o lado oposto",
-                    "Two in One Defesa com Arm Drag braço e Perna por dentro",
-                    "Two in One Defesa - Pegada avançada"
+                    "Suplex e Lataral Drop"
                 ]
             },
             {
-                "title": "12 Arm Drag",
+                "title": "13 Guarda Umbrella",
                 "points": [
-                    "Arm Drag Básico",
-                    "Arm Drag Russo I Arm Drag Defensivo",
-                    "Arm Drag - Para baixo",
-                    "Arm Drag - Kouchi Gake",
-                    "Arm Drag - Hook Out"
+                    "Guarda Umbrella / Guarda \"Guarda Chuva\""
                 ]
             },
             {
-                "title": "13 Duck Under",
+                "title": "14 Defesas Avançadas",
                 "points": [
-                    "Duck Under no Clinch",
-                    "Duck Under com Single Leg",
-                    "Duck Under - Mão no chão"
+                    "Defesas Avançadas de Single Lag",
+                    "Defesas de Double Avançadas",
+                    "Granby Roll - 5 Variações",
+                    "Granby Roll Avançado"
                 ]
             },
             {
-                "title": "14 Throw By",
+                "title": "15 Duck Under",
                 "points": [
-                    "Throw By",
-                    "Throw By com De Ashi Harai",
-                    "Throw By com Single Leg",
-                    "Throw By Levantando a Perna de fora"
+                    "Duck Under e Variações"
                 ]
             },
             {
-                "title": "15 Defesa de Single Leg",
+                "title": "16 Outras Posições Avançadas",
                 "points": [
-                    "Defesa Turca finta e Ankle Pick",
-                    "Defesa Turca - Pegada na Cintura"
-                ]
-            },
-            {
-                "title": "16 Defesa de Single Leg",
-                "points": [
-                    "Cabeça Alta com a testa no meio",
-                    "Fazendo pressão para frente no Overhook",
-                    "Adversário com a cabeça para baixo e abraçando a perna",
-                    "Defendendo com Overhook e Kneebar",
-                    "Ombro no Queixo",
-                    "Defesa de Single Leg usando a Kimura",
-                    "Levantando o Joelho",
-                    "Sumi Gaeshi",
-                    "Cow Catcher",
-                    "Defesa Turca ou Turca Reversa",
-                    "Adversário puxando no Tornozelo - Escorregando",
-                    "Puxando o calcanhar - Escorregando 2",
-                    "Defesa no chão",
-                    "Defesa no chão - Adversário puxando o calcanhar torcendo o seu joelho",
-                    "Crossface com a mão no tornozelo e no tríceps do adversário"
-                ]
-            },
-            {
-                "title": "17 Defesa de Double Leg",
-                "points": [
-                    "Defesa de Double Leg - Cross Face",
-                    "Defesa no chão usando as duas mãos na coxa",
-                    "Defesa de Double Leg Batendo no Quadril"
-                ]
-            },
-            {
-                "title": "18 Defesa de Pescoço",
-                "points": [
-                    "Defesa de Pescoço - 3° passo rápido",
-                    "Defesa de Estrangulamento de Guilhotina usando a Double Leg mão por dentro",
-                    "Pulando para fora - Fazendo uma ponte",
-                    "Defesa de Pescoço com Arm Drag",
-                    "Mãos no Cotovelo e na Coxa/Quadril",
-                    "Giro Reverso",
-                    "Defesa de Triângulo de Braço girando ao redor"
-                ]
-            },
-            {
-                "title": "19 Defesa de Costas",
-                "points": [
-                    "Granby Roll",
-                    "Reversão travando o cotovelo",
-                    "Granby Roll com Kneebar",
-                    "Granby Roll no Seat Belt",
-                    "Granby Roll - Corpo esticado",
-                    "Reversão em pé",
-                    "Defesa de Costas em pé quebrando a pegada com o quadril pra frente",
-                    "Granby Roll em pé",
-                    "Granby Roll em pé com Kneebar"
-                ]
-            },
-            {
-                "title": "20 Defesa de Bodylock",
-                "points": [
-                    "Defesa de Bodylock",
-                    "Defesa de Bodylock Na Lateral"
+                    "Noções de Defesa Pessoal e Situações de Rua",
+                    "Pegada Russa com Guilhotina",
+                    "Defesa de Guilhotina Avançada com Double Lag",
+                    "Quedas do Judô Usadas no Wrestling para o BJJ",
+                    "Defesa de Guilhotina Avançada",
+                    "2 Defesas de Kimura",
+                    "Defesa de Granby Roll",
+                    "Sasae da Esgrima",
+                    "Victor Roll com Finalizações",
+                    "Russian Tie Snap",
+                    "Defesa de Bodylock com Estrela",
+                    "Kataguruma/Headlock Fireman/ Bombeiro de Cabeça"
                 ]
             }
         ]

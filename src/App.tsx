@@ -22,10 +22,10 @@ function App() {
       <TestimonialSection className="bg-gray-100 dark:bg-gray-900" />
       <InstructorBioSection className="bg-white dark:bg-black" />
       <CourseModulesSection className="bg-gray-100 dark:bg-gray-900" />
+      <CourseContent className="bg-gray-100 dark:bg-gray-900" />
       <PricingSection className="bg-white dark:bg-black" />
       <WhatsApp className="bg-gray-100 dark:bg-gray-900 dark:text-white" />
       <FaqSection className="bg-white dark:bg-black" />
-      <CourseContent className="bg-gray-100 dark:bg-gray-900" />
       <Footer />
     </div>
   );
