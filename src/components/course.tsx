@@ -37,7 +37,7 @@ const CourseContent = ({ className }: { className?: string }) => {
                   className="bg-gray-100 dark:bg-gray-800 border border-gray-400 text-gray-900 dark:text-white font-bold mt-3 overflow-hidden rounded-lg transition-colors duration-300"
                 >
                   <button
-                    className="w-full flex justify-between items-center p-6 text-left focus:outline-none transition-colors duration-300"
+                    className="w-full flex justify-between cursor-pointer items-center p-6 text-left focus:outline-none transition-colors duration-300"
                     onClick={() => toggleContent(index)}
                   >
                     <div className="flex items-center gap-4">
