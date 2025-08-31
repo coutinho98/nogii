@@ -64,16 +64,20 @@ const PricingSection = ({ className }: { className?: string }) => {
     text: benefitText,
   }));
 
-  let kiwifyUrl = "https://pay.kiwify.com/VFQHYeA";
+  let productUrl = "https://pay.kiwify.com/VFQHYeA";
   let installmentsPrice = 20.37;
   let fullPrice = 197;
 
   if (lang === 'pt') {
-    kiwifyUrl = "https://pay.kiwify.com.br/abTfgqv";
+    productUrl = "https://pay.kiwify.com.br/abTfgqv";
     installmentsPrice = 20.37;
     fullPrice = 197;
-  } else {
-    kiwifyUrl += `?lang=${lang}`;
+  } else if (lang === 'en') {
+    productUrl = "https://pay.hotmart.com/D100922357U";
+    installmentsPrice = 47;
+    fullPrice = 47;
+  } else if (lang === 'es') {
+    productUrl = "https://pay.hotmart.com/O100799323A";
     installmentsPrice = 47;
     fullPrice = 47;
   }
@@ -131,7 +135,7 @@ const PricingSection = ({ className }: { className?: string }) => {
           </ul>
 
           <button
-            onClick={() => window.open(kiwifyUrl, "_blank", "noopener,noreferrer")}
+            onClick={() => window.open(productUrl, "_blank", "noopener,noreferrer")}
             className="cursor-pointer mt-6 w-full flex items-center justify-center gap-2
               bg-gradient-to-r from-yellow-200 to-orange-500 text-black text-lg
               font-bold py-4 px-8 rounded-lg shadow-lg
