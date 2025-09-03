@@ -1,4 +1,3 @@
-import React from 'react';
 import CourseItem from './CourseItem';
 import AtaquePerna from '../assets/images/banners/AtaquesPerna.jpeg';
 import BodyLock1 from '../assets/images/banners/BODYLOCK.jpg';
@@ -11,7 +10,6 @@ import Instrucional from '../assets/images/banners/Instrucional.jpg';
 import WreslingGi from '../assets/images/banners/WESTRELING-GI.jpg';
 import WrestlingMMA from '../assets/images/banners/WrestlingMMA.jpeg';
 import WrestlingParaJiu from '../assets/images/banners/WrestlingParaJiu.jpg';
-import TodosCursos from '../assets/images/banners/TodosCursos.png';
 import ElectricBorder from '../components/ui/ElectricBorder';
 
 const cardsData = [

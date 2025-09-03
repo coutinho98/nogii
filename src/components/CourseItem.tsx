@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface CourseItemProps {
     imageSrc: string;
     buttonText: string;
