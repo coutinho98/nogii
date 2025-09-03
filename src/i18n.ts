@@ -1,10 +1,29 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 import translationEN from './locales/en/translation.json';
 import translationES from './locales/es/translation.json';
 import translationPT from './locales/pt/translation.json';
+
+const getLanguageFromIP = async () => {
+    try {
+        const response = await fetch('https://get.geojs.io/v1/ip/country.json');
+        const data = await response.json();
+        const countryCode = data.country;
+
+        switch (countryCode) {
+            case 'ES':
+                return 'es';
+            case 'BR':
+                return 'pt';
+            default:
+                return 'en';
+        }
+    } catch (error) {
+        console.error("Erro ao obter geolocalização:", error);
+        return 'en'; 
+    }
+};
 
 (window as any).i18n = i18n;
 
@@ -14,7 +33,6 @@ export const clearLanguageCacheAndReload = () => {
 };
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -26,12 +44,12 @@ i18n
     interpolation: {
       escapeValue: false
     },
-    detection: {
-      order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage']
-    },
     supportedLngs: ['pt', 'en', 'es'],
     nonExplicitSupportedLngs: true,
   });
+
+getLanguageFromIP().then(language => {
+  i18n.changeLanguage(language);
+});
 
 export default i18n;
