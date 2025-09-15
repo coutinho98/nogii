@@ -10,43 +10,47 @@ import Instrucional from '../assets/images/banners/Instrucional.jpg';
 import WreslingGi from '../assets/images/banners/WESTRELING-GI.jpg';
 import WrestlingMMA from '../assets/images/banners/WrestlingMMA.jpeg';
 import WrestlingParaJiu from '../assets/images/banners/WrestlingParaJiu.jpg';
+import AtaquePescoco from '../assets/images/banners/AtaquePescoco.jpeg';
+import WrestlingKids from '../assets/images/banners/WrestlingKids.jpeg';
+import ArmDrag from '../assets/images/banners/ArmDrag.jpeg';
+import Underhook from '../assets/images/banners/Underhook.jpeg';
 import ElectricBorder from '../components/ui/ElectricBorder';
 
 const cardsData = [
     {
         image: AtaquePerna,
-        name: 'Ataque Perna',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        name: 'Ataques de Perna: Heelhook, Leglock, Footlock e muito mais',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/UTm5Yso" }]
     },
     {
         image: BodyLock1,
-        name: 'Body Lock',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        name: 'Bodylock e Suplex - Avançado',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/12imJjT" }]
     },
     {
         image: DefesaPescoço,
-        name: 'Defesa de Pescoço',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        name: 'Masterclass Defesas de Pescoço',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/tNPhpfH" }]
     },
     {
         image: DoubleLeg,
         name: 'Double Leg',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/vIETZ3s" }]
     },
     {
         image: ForçaDoWrestling,
-        name: 'Força do Wrestling',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        name: 'Força dos Wrestlers',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/YiDmPJe" }]
     },
     {
         image: InglesJiu,
-        name: 'Inglês para Jiu-Jitsu',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        name: 'Inglês para o BJJ',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dvbphPo" }]
     },
     {
         image: InstaProFighters,
         name: 'Insta Pro Fighters',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/g5J3Tbe" }]
     },
     {
         image: Instrucional,
@@ -56,17 +60,37 @@ const cardsData = [
     {
         image: WreslingGi,
         name: 'Wrestling Gi',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/cqY1a6g" }]
     },
     {
         image: WrestlingMMA,
-        name: 'Wrestling MMA',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        name: 'Wrestling para o MMA: total controle sobre o adversário',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dV0dQUJ" }]
     },
     {
         image: WrestlingParaJiu,
-        name: 'Wrestling para Jiu-Jitsu',
-        links: [{ children: "Ir para o curso", href: "#" }]
+        name: 'Wrestling para Jiu-Jitsu do Básico ao Avançado ',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/abTfgqv" }]
+    },
+    {
+        image: AtaquePescoco,
+        name: 'Ataque de Pescoço',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/VNBFHYu" }]
+    },
+    {
+        image: WrestlingKids,
+        name: 'Workshop Wrestling Kids',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/zz2g2jn" }]
+    },
+    {
+        image: ArmDrag,
+        name: 'Arm Drag - Avançado',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/NxdQjT1" }]
+    },
+    {
+        image: Underhook,
+        name: 'Underhook e Overhook - Avançado',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/phhCZBt" }]
     }
 ];
 
@@ -80,6 +104,7 @@ const CourseCardsSection = () => {
                             <CourseItem
                                 imageSrc={card.image}
                                 buttonText={card.links[0].children}
+                                href={card.links[0].href}
                             />
                         </div>
                     ))}
@@ -101,10 +126,10 @@ const CourseCardsSection = () => {
                                 <p className="text-white text-lg mb-2">Todos os Cursos</p>
                                 <p className="text-white text-4xl font-extrabold">R$997</p>
                                 <button
-                                    onClick={() => {}}
-                                    className="mt-6 w-full flex items-center justify-center  rounded-4xl
+                                    onClick={() => { }}
+                                    className="mt-6 w-full flex items-center justify-center rounded-4xl
                                                bg-white text-black 
-                                               font-semibold  py-1 shadow-lg cursor-pointer"
+                                               font-semibold py-1 shadow-lg cursor-pointer"
                                 >
                                     Compre agora!
                                 </button>

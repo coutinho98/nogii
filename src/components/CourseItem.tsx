@@ -1,10 +1,11 @@
 interface CourseItemProps {
     imageSrc: string;
+    href: string;
     buttonText: string;
     className?: string;
 }
 
-const CourseItem = ({ imageSrc, buttonText, className }: CourseItemProps) => (
+const CourseItem = ({ imageSrc, buttonText, className, href }: CourseItemProps) => (
     <article className={`flex flex-col items-center ${className}`}>
         <div className="size-96 border-4 border-[#1d1d1d] rounded-3xl ">
             <img
@@ -15,7 +16,7 @@ const CourseItem = ({ imageSrc, buttonText, className }: CourseItemProps) => (
         </div>
         <div className="mt-6">
             <button
-                onClick={() => { }}
+                onClick={() => window.open(href, "_blank", "noopener,noreferrer")}
                 className="w-80 flex items-center justify-center gap-2 rounded-4xl
                            bg-gradient-to-r from-yellow-200 to-orange-900 text-white text-lg
                            font-bold py-2 shadow-lg cursor-pointer"
