@@ -17,6 +17,30 @@ import ElectricBorder from '../components/ui/ElectricBorder';
 
 const cardsData = [
     {
+        image: WrestlingParaJiu,
+        name: 'Wrestling para Jiu-Jitsu do Básico ao Avançado ',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/abTfgqv" }],
+        price: 'R$197,00'
+    },
+    {
+        image: WreslingGi,
+        name: 'Wrestling Gi',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/cqY1a6g" }],
+        price: 'R$197,00'
+    },
+    {
+        image: ForçaDoWrestling,
+        name: 'Força dos Wrestlers',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/YiDmPJe" }],
+        price: 'R$97,00'
+    },
+    {
+        image: WrestlingMMA,
+        name: 'Wrestling para o MMA: total controle sobre o adversário',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dV0dQUJ" }],
+        price: 'R$197,00'
+    },
+    {
         image: AtaquePerna,
         name: 'Ataques de Perna: Heelhook, Leglock, Footlock e muito mais',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/UTm5Yso" }],
@@ -40,12 +64,7 @@ const cardsData = [
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/vIETZ3s" }],
         price: 'R$97,00'
     },
-    {
-        image: ForçaDoWrestling,
-        name: 'Força dos Wrestlers',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/YiDmPJe" }],
-        price: 'R$97,00'
-    },
+
     {
         image: InglesJiu,
         name: 'Inglês para o BJJ',
@@ -57,24 +76,6 @@ const cardsData = [
         name: 'Insta Pro Fighters',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/g5J3Tbe" }],
         price: 'R$97,00'
-    },
-    {
-        image: WreslingGi,
-        name: 'Wrestling Gi',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/cqY1a6g" }],
-        price: 'R$197,00'
-    },
-    {
-        image: WrestlingMMA,
-        name: 'Wrestling para o MMA: total controle sobre o adversário',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dV0dQUJ" }],
-        price: 'R$197,00'
-    },
-    {
-        image: WrestlingParaJiu,
-        name: 'Wrestling para Jiu-Jitsu do Básico ao Avançado ',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/abTfgqv" }],
-        price: 'R$197,00'
     },
     {
         image: AtaquePescoco,
