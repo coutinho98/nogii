@@ -3,10 +3,12 @@ interface CourseItemProps {
     href: string;
     buttonText: string;
     className?: string;
+    price: string;
 }
 
-const CourseItem = ({ imageSrc, buttonText, className, href }: CourseItemProps) => (
+const CourseItem = ({ imageSrc, buttonText, className, href, price }: CourseItemProps) => (
     <article className={`flex flex-col items-center ${className}`}>
+        <p className="text-white text-xl font-semibold mb-2">{price}</p>
         <div className="size-96 border-4 border-[#1d1d1d] rounded-3xl ">
             <img
                 src={imageSrc}
