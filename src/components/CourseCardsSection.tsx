@@ -53,11 +53,6 @@ const cardsData = [
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/g5J3Tbe" }]
     },
     {
-        image: Instrucional,
-        name: 'Instrucional',
-        links: [{ children: "Ir para o curso", href: "#" }]
-    },
-    {
         image: WreslingGi,
         name: 'Wrestling Gi',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/cqY1a6g" }]
