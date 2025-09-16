@@ -6,7 +6,6 @@ import DoubleLeg from '../assets/images/banners/DoubleLeg.jpeg';
 import ForçaDoWrestling from '../assets/images/banners/ForçaDoWrestling.jpg';
 import InglesJiu from '../assets/images/banners/InglesJiu.jpeg';
 import InstaProFighters from '../assets/images/banners/InstaProFighters.jpeg';
-import Instrucional from '../assets/images/banners/Instrucional.jpg';
 import WreslingGi from '../assets/images/banners/WESTRELING-GI.jpg';
 import WrestlingMMA from '../assets/images/banners/WrestlingMMA.jpeg';
 import WrestlingParaJiu from '../assets/images/banners/WrestlingParaJiu.jpg';
