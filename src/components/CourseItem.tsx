@@ -15,8 +15,8 @@ const CourseItem = ({ imageSrc, buttonText, className, href, price }: CourseItem
                 className="w-full h-full object-cover rounded-4xl"
             />
         </div>
-        <div className="mt-6">
-        <p className="text-white text-xl font-semibold mb-2">{price}</p>
+        <div className="mt-2">
+        <p className="text-white text-xl font-semibold mb-2 text-center">{price}</p>
             <button
                 onClick={() => window.open(href, "_blank", "noopener,noreferrer")}
                 className="w-80 flex items-center justify-center gap-2 rounded-4xl
