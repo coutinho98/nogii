@@ -8,7 +8,6 @@ interface CourseItemProps {
 
 const CourseItem = ({ imageSrc, buttonText, className, href, price }: CourseItemProps) => (
     <article className={`flex flex-col items-center ${className}`}>
-        <p className="text-white text-xl font-semibold mb-2">{price}</p>
         <div className="size-96 border-4 border-[#1d1d1d] rounded-3xl ">
             <img
                 src={imageSrc}
@@ -17,6 +16,7 @@ const CourseItem = ({ imageSrc, buttonText, className, href, price }: CourseItem
             />
         </div>
         <div className="mt-6">
+        <p className="text-white text-xl font-semibold mb-2">{price}</p>
             <button
                 onClick={() => window.open(href, "_blank", "noopener,noreferrer")}
                 className="w-80 flex items-center justify-center gap-2 rounded-4xl
