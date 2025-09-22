@@ -14,7 +14,6 @@ import WrestlingKids from '../assets/images/banners/WrestlingKids.jpeg';
 import ArmDrag from '../assets/images/banners/ArmDrag.jpeg';
 import Underhook from '../assets/images/banners/Underhook.jpeg';
 import Drill from '../assets/images/banners/drills.jpg';
-import TodosCursos from '../assets/images/banners/total.jpg';
 
 const cardsData = [
     {
