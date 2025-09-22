@@ -11,6 +11,7 @@ import Footer from './components/footer'
 import LegalPage from './components/legal';
 import Events from './pages/events'
 import Home from './pages/home'
+import Upsell from './pages/upsell'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CourseContent from './components/course';
 
@@ -36,8 +37,9 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path="/home" element={<App />} />
+        <Route path="/" element={<App />} />
+        <Route path='/upsell' element={<Upsell />} />
+        <Route path='/combo' element={<Home />} />
         <Route path="/legal" element={<LegalPage />} />
         <Route path='/eventos' element={<Events />} />
       </Routes>

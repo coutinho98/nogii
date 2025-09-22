@@ -95,7 +95,6 @@ const cardsData = [
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/VNBFHYu" }],
         price: 'R$147,00'
     },
-
     {
         image: ArmDrag,
         name: 'Arm Drag - Avançado',
@@ -133,11 +132,11 @@ const CourseCardsSection = () => {
                     <div className="flex justify-center w-full max-w-lg">
 
                        <div className="p-6 w-full flex flex-col items-center justify-center text-center font-inter">
-                                <img src={TodosCursos} alt="Compre todos os cursos" className="w-full h-auto rounded-lg mb-4" />
-                                <p className="mt-3 mb-2 text-gray-400 text-xl line-through">R$2.055</p>
-                                <p className="text-white text-5xl font-extrabold">R$997</p>
+                               {/*  <img src={TodosCursos} alt="Compre todos os cursos" className="w-full h-auto rounded-lg mb-4" /> */}
+                                <p className=" mb-2 text-gray-400 text-xl line-through">R$2.055</p>
+                                <p className="text-white text-5xl font-extrabold">R$697</p>
                                 <button
-                                    onClick={() => window.open('https://pay.kiwify.com.br/6g9ayTN', '_blank', 'noopener,noreferrer')}
+                                    onClick={() => window.open('https://pay.kiwify.com.br/qI2xv96', '_blank', 'noopener,noreferrer')}
                                     className="mt-4 w-full flex items-center justify-center rounded-4xl
                                                bg-white text-black
                                                font-semibold py-2 shadow-lg cursor-pointer"
