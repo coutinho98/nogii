@@ -13,7 +13,8 @@ import AtaquePescoco from '../assets/images/banners/AtaquePescoco.jpeg';
 import WrestlingKids from '../assets/images/banners/WrestlingKids.jpeg';
 import ArmDrag from '../assets/images/banners/ArmDrag.jpeg';
 import Underhook from '../assets/images/banners/Underhook.jpeg';
-import ElectricBorder from '../components/ui/ElectricBorder';
+import Drill from '../assets/images/banners/drills.jpg';
+import TodosCursos from '../assets/images/banners/total.jpg';
 
 const cardsData = [
     {
@@ -41,9 +42,33 @@ const cardsData = [
         price: 'R$197,00'
     },
     {
+        image: DoubleLeg,
+        name: 'Double Leg',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/vIETZ3s" }],
+        price: 'R$97,00'
+    },
+    {
+        image: WrestlingKids,
+        name: 'Workshop Wrestling Kids',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/zz2g2jn" }],
+        price: 'R$97,00'
+    },
+    {
+        image: InglesJiu,
+        name: 'Inglês para o BJJ',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dvbphPo" }],
+        price: 'R$197,00'
+    },
+    {
         image: AtaquePerna,
         name: 'Ataques de Perna: Heelhook, Leglock, Footlock e muito mais',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/UTm5Yso" }],
+        price: 'R$147,00'
+    },
+    {
+        image: Drill,
+        name: ' Gênio dos Drills - Wrestling Gi',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/jvVBHKc" }],
         price: 'R$147,00'
     },
     {
@@ -59,19 +84,6 @@ const cardsData = [
         price: 'R$147,00'
     },
     {
-        image: DoubleLeg,
-        name: 'Double Leg',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/vIETZ3s" }],
-        price: 'R$97,00'
-    },
-
-    {
-        image: InglesJiu,
-        name: 'Inglês para o BJJ',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dvbphPo" }],
-        price: 'R$197,00'
-    },
-    {
         image: InstaProFighters,
         name: 'Insta Pro Fighters',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/g5J3Tbe" }],
@@ -83,12 +95,7 @@ const cardsData = [
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/VNBFHYu" }],
         price: 'R$147,00'
     },
-    {
-        image: WrestlingKids,
-        name: 'Workshop Wrestling Kids',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/zz2g2jn" }],
-        price: 'R$97,00'
-    },
+
     {
         image: ArmDrag,
         name: 'Arm Drag - Avançado',
@@ -124,28 +131,20 @@ const CourseCardsSection = () => {
                         Compre todos os cursos
                     </h2>
                     <div className="flex justify-center w-full max-w-lg">
-                        <ElectricBorder
-                            color="#FFA200"
-                            speed={0.8}
-                            chaos={1}
-                            thickness={2}
-                            style={{ borderRadius: 16 }}
-                        >
-                            <div className="p-6 w-full flex flex-col items-center justify-center text-center font-inter">
-                                <h3 className="text-white text-3xl font-bold mb-6">Oferta Especial</h3>
-                                <p className="text-white text-xl mb-3">Todos os Cursos</p>
-                                <p className="text-gray-400 text-xl line-through">R$20555</p>
+
+                       <div className="p-6 w-full flex flex-col items-center justify-center text-center font-inter">
+                                <img src={TodosCursos} alt="Compre todos os cursos" className="w-full h-auto rounded-lg mb-4" />
+                                <p className="mt-3 mb-2 text-gray-400 text-xl line-through">R$2.055</p>
                                 <p className="text-white text-5xl font-extrabold">R$997</p>
                                 <button
                                     onClick={() => window.open('https://pay.kiwify.com.br/6g9ayTN', '_blank', 'noopener,noreferrer')}
-                                    className="mt-8 w-full flex items-center justify-center rounded-4xl
+                                    className="mt-4 w-full flex items-center justify-center rounded-4xl
                                                bg-white text-black
                                                font-semibold py-2 shadow-lg cursor-pointer"
                                 >
                                     Compre agora!
                                 </button>
                             </div>
-                        </ElectricBorder>
                     </div>
                 </div>
             </div>
