@@ -14,6 +14,7 @@ import WrestlingKids from '../assets/images/banners/WrestlingKids.jpeg';
 import ArmDrag from '../assets/images/banners/ArmDrag.jpeg';
 import Underhook from '../assets/images/banners/Underhook.jpeg';
 import Drill from '../assets/images/banners/drills.jpg';
+import { motion } from 'framer-motion';
 
 const cardsData = [
     {
@@ -35,6 +36,12 @@ const cardsData = [
         price: 'R$97,00'
     },
     {
+        image: Drill,
+        name: ' Gênio dos Drills - Wrestling Gi',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/jvVBHKc" }],
+        price: 'R$97,00'
+    },
+    {
         image: WrestlingMMA,
         name: 'Wrestling para o MMA: total controle sobre o adversário',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dV0dQUJ" }],
@@ -53,24 +60,6 @@ const cardsData = [
         price: 'R$97,00'
     },
     {
-        image: InglesJiu,
-        name: 'Inglês para o BJJ',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dvbphPo" }],
-        price: 'R$197,00'
-    },
-    {
-        image: AtaquePerna,
-        name: 'Ataques de Perna: Heelhook, Leglock, Footlock e muito mais',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/UTm5Yso" }],
-        price: 'R$147,00'
-    },
-    {
-        image: Drill,
-        name: ' Gênio dos Drills - Wrestling Gi',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/jvVBHKc" }],
-        price: 'R$97,00'
-    },
-    {
         image: BodyLock1,
         name: 'Bodylock e Suplex - Avançado',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/12imJjT" }],
@@ -82,12 +71,7 @@ const cardsData = [
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/tNPhpfH" }],
         price: 'R$147,00'
     },
-    {
-        image: InstaProFighters,
-        name: 'Insta Pro Fighters',
-        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/g5J3Tbe" }],
-        price: 'R$97,00'
-    },
+
     {
         image: AtaquePescoco,
         name: 'Ataque de Pescoço',
@@ -105,7 +89,25 @@ const cardsData = [
         name: 'Underhook e Overhook - Avançado',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/phhCZBt" }],
         price: 'R$147,00'
-    }
+    },
+    {
+        image: InglesJiu,
+        name: 'Inglês para o BJJ',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/dvbphPo" }],
+        price: 'R$197,00'
+    },
+    {
+        image: AtaquePerna,
+        name: 'Ataques de Perna: Heelhook, Leglock, Footlock e muito mais',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/UTm5Yso" }],
+        price: 'R$147,00'
+    },
+    {
+        image: InstaProFighters,
+        name: 'Insta Pro Fighters',
+        links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/g5J3Tbe" }],
+        price: 'R$97,00'
+    },
 ];
 
 const CourseCardsSection = () => {
@@ -125,24 +127,34 @@ const CourseCardsSection = () => {
                     ))}
                 </div>
                 <div className="mt-12 flex flex-col items-center">
-                    <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center mb-6 font-inter">
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center  font-inter">
                         Compre todos os cursos
                     </h2>
                     <div className="flex justify-center w-full max-w-lg">
 
-                       <div className="p-6 w-full flex flex-col items-center justify-center text-center font-inter">
-                               {/*  <img src={TodosCursos} alt="Compre todos os cursos" className="w-full h-auto rounded-lg mb-4" /> */}
-                                <p className=" mb-2 text-gray-400 text-xl line-through">R$2.055</p>
-                                <p className="text-white text-5xl font-extrabold">R$697</p>
-                                <button
-                                    onClick={() => window.open('https://pay.kiwify.com.br/qI2xv96', '_blank', 'noopener,noreferrer')}
-                                    className="mt-4 w-full flex items-center justify-center rounded-4xl
-                                               bg-white text-black
-                                               font-semibold py-2 shadow-lg cursor-pointer"
-                                >
-                                    Compre agora!
-                                </button>
-                            </div>
+                        <div className="p-6 w-full flex flex-col items-center justify-center text-center font-inter">
+                        {/*     <img src={TodosCursos} alt="Compre todos os cursos" className="w-full h-auto rounded-lg mb-4" /> */}
+                            <p className="mt-3 mb-2 text-gray-400 text-xl line-through">R$2.055</p>
+                            <motion.p
+                                className="text-lime-500 text-5xl font-extrabold"
+                                animate={{ scale: [1, 1.05, 1] }}
+                                transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+                            >
+                                R$697
+                            </motion.p>
+                            <motion.button
+                                onClick={() => window.open('https://pay.kiwify.com.br/qI2xv96', '_blank', 'noopener,noreferrer')}
+                                className="mt-4 w-full flex items-center justify-center rounded-4xl
+                 bg-lime-500 text-white
+                 font-semibold py-2 shadow-lg cursor-pointer"
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                animate={{ scale: [1, 1.02, 1] }}
+                                transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
+                            >
+                                Compre agora!
+                            </motion.button>
+                        </div>
                     </div>
                 </div>
             </div>
