@@ -16,6 +16,7 @@ import Underhook from '../assets/images/banners/Underhook.jpeg';
 import Drill from '../assets/images/banners/drills.jpg';
 import TodosCursos from '../assets/images/banners/total.jpg';
 import { motion } from 'framer-motion';
+import { Zap } from 'lucide-react'; // Importado o ícone Zap
 
 const cardsData = [
     {
@@ -111,50 +112,161 @@ const cardsData = [
     },
 ];
 
+// Helper para simular as tags/highlights
+const getTags = (name: string) => {
+    if (name.includes('Jiu-Jitsu')) return ['Wrestling', 'Jiu-Jitsu', 'Básico ao Avançado'];
+    if (name.includes('Gi') && name.includes('Drills')) return ['Drills', 'Wrestling', 'Gi'];
+    if (name.includes('Gi')) return ['Wrestling', 'Gi'];
+    if (name.includes('Wrestling') && name.includes('Força')) return ['Wrestling', 'Força', 'Treino'];
+    if (name.includes('MMA')) return ['Wrestling', 'MMA', 'Controle'];
+    if (name.includes('Double Leg')) return ['Seminário', 'Quedas', 'Double Leg'];
+    if (name.includes('Kids')) return ['Workshop', 'Kids', 'Metodologia'];
+    if (name.includes('Bodylock') || name.includes('Suplex')) return ['Técnica', 'Avançado', 'Bodylock'];
+    if (name.includes('Defesas de Pescoço')) return ['Masterclass', 'Defesas', 'Pescoço'];
+    if (name.includes('Ataque de Pescoço')) return ['Ataque', 'Headlocks', 'Avançado'];
+    if (name.includes('Arm Drag')) return ['Técnica', 'Arm Drag', 'Avançado'];
+    if (name.includes('Underhook')) return ['Técnica', 'Underhook', 'Overhook'];
+    if (name.includes('Inglês')) return ['BJJ', 'Inglês', 'Carreira'];
+    if (name.includes('Perna')) return ['Leglocks', 'Heelhook', 'Finalização'];
+    if (name.includes('Insta')) return ['Marketing', 'Fighters', 'Crescimento'];
+    return ['Wrestling'];
+};
+
 const CourseCardsSection = () => {
+    const INSTRUCTOR_NAME = 'Wilgner Silva'; 
+    const TOTAL_PRICE_CROSSED = 'R$2.055'; 
+    const TOTAL_PRICE_NEW = 'R$997'; 
+    const COMBO_URL = 'https://pay.kiwify.com.br/6g9ayTN';
+
     return (
         <section className="py-16">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-stretch">
                     {cardsData.map((card, index) => (
-                        <div key={index} className="flex justify-center">
-                            <CourseItem
-                                imageSrc={card.image}
-                                buttonText={card.links[0].children}
-                                href={card.links[0].href}
-                                price={card.price}
-                            />
+                         <div
+                            key={index}
+                            className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 h-full flex flex-col hover:border-orange-500 transition-all duration-300 ease-in-out hover:shadow-orange-500/10 shadow-lg hover:scale-[1.02] cursor-pointer hover:ring-2 hover:ring-orange-500/50 hover:ring-offset-2 hover:ring-offset-[#060010]"
+                            onClick={() => window.open(card.links[0].href, '_blank', 'noopener,noreferrer')}
+                        >
+                            <div className="relative overflow-hidden aspect-square">
+                                <img
+                                    src={card.image}
+                                    alt={card.name.trim()}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+
+                            <div className="p-6 flex-1 flex flex-col bg-gray-900/60">
+                                <h4 className="text-xl font-bold text-white mb-2">{card.name.trim()}</h4>
+
+                                <div className="flex-1">
+                                    <p className="text-gray-400 text-sm mb-4">
+                                        {card.name.trim()}. Aprenda as técnicas essenciais e estratégias avançadas para levar sua performance de grappling para o próximo nível.
+                                    </p>
+
+                                    <div className="mb-4">
+                                        <div className="flex flex-wrap gap-2">
+                                            {getTags(card.name).map((tag, idx) => (
+                                                <span
+                                                    key={idx}
+                                                    className="bg-orange-700/50 text-yellow-300 px-3 py-1 rounded-full text-xs font-semibold"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center justify-between pt-4 border-t border-gray-700 mt-auto">
+                                    <div>
+                                        <p className="text-gray-400 text-xs">Instrutor</p>
+                                        <p className="text-white font-semibold">{INSTRUCTOR_NAME}</p>
+                                    </div>
+                                    <div className="text-right">
+                                        <p className="text-2xl font-bold text-orange-500">{card.price}</p> 
+                                        <a
+                                            href={card.links[0].href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="cursor-pointer  text-white mt-2 bg-gradient-to-r from-orange-500 to-yellow-600 hover:from-orange-600 hover:to-yellow-700 text-black px-6 py-2 rounded-lg font-bold transition-all duration-200 flex items-center justify-center space-x-2"
+                                            onClick={(e) => e.stopPropagation()} 
+                                        >
+                                            <span>Comprar</span>
+                                            <Zap className="w-4 h-4" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
-                <div className="mt-12 flex flex-col items-center">
-                    <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center mb-6 font-inter">
-                        Compre todos os cursos
-                    </h2>
-                    <div className="flex justify-center w-full max-w-lg">
+                
+                <div className="mt-12 flex justify-center w-full">
+                    <div
+                        className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 max-w-4xl w-full flex flex-col md:flex-row hover:border-orange-500 transition-all duration-300 ease-in-out hover:shadow-orange-500/10 shadow-lg hover:scale-[1.02] cursor-pointer hover:ring-2 hover:ring-orange-500/50 hover:ring-offset-2 hover:ring-offset-[#060010]"
+                        onClick={() => window.open(COMBO_URL, '_blank', 'noopener,noreferrer')}
+                    >
+                        <div className="relative overflow-hidden aspect-square md:aspect-auto md:w-1/2">
+                            <img
+                                src={TodosCursos}
+                                alt="Combo Completo: Todos os Cursos"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
 
-                        <div className="p-6 w-full flex flex-col items-center justify-center text-center font-inter">
-                            <img src={TodosCursos} alt="Compre todos os cursos" className="w-full h-auto rounded-lg mb-4" />
-                            <p className="mt-3 mb-2 text-gray-400 text-xl line-through">R$2.055</p>
-                            <motion.p
-                                className="text-lime-500 text-5xl font-extrabold"
-                                animate={{ scale: [1, 1.05, 1] }}
-                                transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-                            >
-                                R$997
-                            </motion.p>
-                            <motion.button
-                                onClick={() => window.open('https://pay.kiwify.com.br/6g9ayTN', '_blank', 'noopener,noreferrer')}
-                                className="mt-4 w-full flex items-center justify-center rounded-4xl
-                 bg-lime-500 text-white
-                 font-semibold py-2 shadow-lg cursor-pointer"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                animate={{ scale: [1, 1.02, 1] }}
-                                transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
-                            >
-                                Compre agora!
-                            </motion.button>
+                        <div className="p-6 flex-1 flex flex-col bg-gray-900/60 md:w-1/2">
+                            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-2 font-inter">
+                                Combo Completo
+                            </h2>
+                            <h4 className="text-xl font-bold text-white mb-2">Todos os Cursos de {INSTRUCTOR_NAME}</h4>
+
+                            <div className="flex-1 mt-4">
+                                <p className="text-gray-400 text-base mb-4">
+                                    Tenha acesso imediato a <span className='font-bold'>mais de 15 cursos</span> e workshops de Wrestling para Jiu-Jitsu, MMA e desenvolvimento de carreira. Domine a luta em pé, as defesas mais avançadas e todas as posições de ataque, do básico ao avançado, com a metodologia do Campeão Brasileiro.
+                                </p>
+
+                                <div className="mb-4">
+                                    <div className="flex flex-wrap gap-2">
+                                        {['Wrestling', 'BJJ', 'MMA', 'Drills', 'Defesas', '15 Cursos'].map((tag, idx) => (
+                                            <span
+                                                key={idx}
+                                                className="bg-orange-700/50 text-yellow-300 px-3 py-1 rounded-full text-xs font-semibold"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center justify-between pt-4 border-t border-gray-700 mt-auto">
+                                <div>
+                                    <p className="text-gray-400 text-xs">Preço de Tabela</p>
+                                    <p className="text-gray-400 text-xl line-through">{TOTAL_PRICE_CROSSED}</p>
+                                    <p className="text-white font-semibold">Preço Combo Exclusivo</p>
+                                </div>
+                                
+                                <div className="text-right flex flex-col items-end">
+                                    <motion.p
+                                        className="text-5xl font-extrabold text-orange-500"
+                                        animate={{ scale: [1, 1.05, 1] }}
+                                        transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+                                    >
+                                        {TOTAL_PRICE_NEW}
+                                    </motion.p>
+                                    <a
+                                        href={COMBO_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="cursor-pointer mt-2 bg-gradient-to-r from-orange-500 to-yellow-600 hover:from-orange-600 hover:to-yellow-700 text-black px-6 py-2 rounded-lg font-bold transition-all duration-200 flex items-center justify-center space-x-2"
+                                        onClick={(e) => e.stopPropagation()}
+                                    >
+                                        <span className='text-white'>Compre agora!</span>
+                                        <Zap className="w-4 h-4 text-white" />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

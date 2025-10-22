@@ -30,10 +30,10 @@ const WhatsApp = ({ className }: { className?: string }) => {
                     />
                     {t('whatsapp_section.button_text')}
                 </a>
-                
+
                 <div className="mt-4">
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {t('guarantee_text.title')}
+                        {t('guarantee_text.title')}
                     </p>
                 </div>
 
