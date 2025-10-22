@@ -1,4 +1,3 @@
-import CourseItem from './CourseItem';
 import AtaquePerna from '../assets/images/banners/AtaquesPerna.jpeg';
 import BodyLock1 from '../assets/images/banners/BODYLOCK.jpg';
 import DefesaPescoço from '../assets/images/banners/DEFESA-DE-PESCOCO.jpg';
@@ -16,7 +15,7 @@ import Underhook from '../assets/images/banners/Underhook.jpeg';
 import Drill from '../assets/images/banners/drills.jpg';
 import TodosCursos from '../assets/images/banners/total.jpg';
 import { motion } from 'framer-motion';
-import { Zap } from 'lucide-react'; // Importado o ícone Zap
+import { Zap } from 'lucide-react'; 
 
 const cardsData = [
     {
