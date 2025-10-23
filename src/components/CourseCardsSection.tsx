@@ -38,7 +38,7 @@ const cardsData = [
     },
     {
         image: Drill,
-        name: ' Gênio dos Drills - Wrestling Gi',
+        name: ' Gênio dos Drills - Wrestling',
         links: [{ children: "Ir para o curso", href: "https://pay.kiwify.com.br/jvVBHKc" }],
         price: 'R$97,00'
     },
@@ -111,7 +111,6 @@ const cardsData = [
     },
 ];
 
-// Helper para simular as tags/highlights
 const getTags = (name: string) => {
     if (name.includes('Jiu-Jitsu')) return ['Wrestling', 'Jiu-Jitsu', 'Básico ao Avançado'];
     if (name.includes('Gi') && name.includes('Drills')) return ['Drills', 'Wrestling', 'Gi'];
