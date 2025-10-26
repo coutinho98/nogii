@@ -22,7 +22,8 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx", // Garante que o TypeScript entenda o JSX
+    "types": ["react", "react-dom"], // Adicione isso se o erro persistir.
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
