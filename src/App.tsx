@@ -12,6 +12,7 @@ import LegalPage from './components/legal';
 import Events from './pages/events'
 import Home from './pages/home'
 import Upsell from './pages/upsell'
+import Blackfriday from './pages/blackfriday'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CourseContent from './components/course';
 
@@ -39,6 +40,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path='/upsell' element={<Upsell />} />
+        <Route path='/blackfriday' element={<Blackfriday />} />
         <Route path='/combo' element={<Home />} />
         <Route path="/legal" element={<LegalPage />} />
         <Route path='/eventos' element={<Events />} />
