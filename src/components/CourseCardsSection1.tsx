@@ -14,7 +14,8 @@ import ArmDrag from '../assets/images/banners/ArmDrag.jpeg';
 import Underhook from '../assets/images/banners/Underhook.jpeg';
 import Drill from '../assets/images/banners/drills.jpg';
 import { motion } from 'framer-motion';
-import { Zap } from 'lucide-react'; 
+import { Zap } from 'lucide-react';
+import TotalImage from '../assets/images/BLACK-WILL.png';
 
 const cardsData = [
     {
@@ -201,11 +202,18 @@ const CourseCardsSection = () => {
 
                 <div className="mt-12 flex justify-center w-full">
                     <div
-                        className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 max-w-4xl w-full flex flex-col hover:border-orange-500 transition-all duration-300 ease-in-out hover:shadow-orange-500/10 shadow-lg hover:scale-[1.02] cursor-pointer hover:ring-2 hover:ring-orange-500/50 hover:ring-offset-2 hover:ring-offset-[#060010]"
+                        className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 max-w-4xl w-full flex flex-col md:flex-row hover:border-orange-500 transition-all duration-300 ease-in-out hover:shadow-orange-500/10 shadow-lg hover:scale-[1.02] cursor-pointer hover:ring-2 hover:ring-orange-500/50 hover:ring-offset-2 hover:ring-offset-[#060010]"
                         onClick={() => window.open(COMBO_URL, '_blank', 'noopener,noreferrer')}
                     >
+                        <div className="relative overflow-hidden aspect-square md:aspect-auto md:w-1/2">
+                            <img
+                                src={TotalImage}
+                                alt="Combo Completo: Todos os Cursos"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
 
-                        <div className="p-6 flex-1 flex flex-col bg-gray-900/60 w-full">
+                        <div className="p-6 flex-1 flex flex-col bg-gray-900/60 md:w-1/2">
                             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-2 font-inter">
                                 Combo Completo
                             </h2>
@@ -213,7 +221,7 @@ const CourseCardsSection = () => {
 
                             <div className="flex-1 mt-4">
                                 <p className="text-gray-400 text-base mb-4">
-                                    Tenha acesso imediato a **mais de 15 cursos** e workshops de Wrestling para Jiu-Jitsu, MMA e desenvolvimento de carreira. Domine a luta em pé, as defesas mais avançadas e todas as posições de ataque, do básico ao avançado, com a metodologia do Campeão Brasileiro.
+                                    Tenha acesso imediato a <span className='font-bold'>mais de 15 cursos</span> e workshops de Wrestling para Jiu-Jitsu, MMA e desenvolvimento de carreira. Domine a luta em pé, as defesas mais avançadas e todas as posições de ataque, do básico ao avançado, com a metodologia do Campeão Brasileiro.
                                 </p>
 
                                 <div className="mb-4">

@@ -1,4 +1,5 @@
 import { useState, useEffect, type JSX } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const calculateTimeLeft = () => {
   const targetDate = new Date('2025-11-06T23:59:59').getTime(); 
@@ -22,12 +23,18 @@ const calculateTimeLeft = () => {
 
 const CountdownTimer = ({ className }: { className?: string }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  
+  const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5561981292064&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20tirar%C2%A0d%C3%BAvidas%20sobre%C2%A0o%20curso%C2%A0de%C2%A0%C2%A0Wrestling%C2%A0%C2%A0para%C2%A0%C2%A0o%C2%A0%C2%A0Jiu-J%C3%ADtsu";
 
   useEffect(() => {
     if (timeLeft.expired) return;
 
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
+      if (newTimeLeft.expired) {
+        clearInterval(timer);
+      }
     }, 1000);
 
     return () => clearInterval(timer);
@@ -65,10 +72,26 @@ const CountdownTimer = ({ className }: { className?: string }) => {
             <p className="text-xl text-red-500 font-bold">O tempo expirou.</p>
           )}
         </div>
+        
         {!timeLeft.expired && (
-          <p className="mt-8 text-xl font-bold text-yellow-400 animate-pulse">
-            Preço Exclusivo de R$697,00 — Não perca o desconto de 70%!
-          </p>
+          <div className="mt-8">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg shadow-xl transition-transform duration-300 transform hover:scale-[1.03] uppercase text-lg tracking-wider animate-bounce"
+            >
+              <FaWhatsapp className="w-8 h-8" />
+              GARANTA SEU COMBO OU TIRE DÚVIDAS AGORA!
+            </a>
+            <p className="mt-4 text-base font-bold text-yellow-400 animate-pulse">
+                Preço Exclusivo de R$697,00 — Não perca o desconto de 70%!
+            </p>
+          </div>
+        )}
+
+        {timeLeft.expired && (
+             <p className="mt-8 text-xl text-red-500 font-bold">O tempo expirou. A oferta exclusiva de R$697,00 não está mais disponível.</p>
         )}
       </div>
     </section>
