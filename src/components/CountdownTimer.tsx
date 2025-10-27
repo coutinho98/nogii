@@ -2,7 +2,7 @@ import { useState, useEffect, type JSX } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const calculateTimeLeft = () => {
-  const targetDate = new Date('2025-11-06T23:59:59').getTime(); 
+  const targetDate = new Date('2025-11-06T23:59:59').getTime();
   const now = new Date().getTime();
   const difference = targetDate - now;
 
@@ -23,8 +23,8 @@ const calculateTimeLeft = () => {
 
 const CountdownTimer = ({ className }: { className?: string }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  
-  const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5561981292064&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20tirar%C2%A0d%C3%BAvidas%20sobre%C2%A0o%20curso%C2%A0de%C2%A0%C2%A0Wrestling%C2%A0%C2%A0para%C2%A0%C2%A0o%C2%A0%C2%A0Jiu-J%C3%ADtsu";
+
+  const WHATSAPP_LINK = "https://chat.whatsapp.com/CehwexWdYgBIpT5epzemsR?mode=wwt";
 
   useEffect(() => {
     if (timeLeft.expired) return;
@@ -46,7 +46,7 @@ const CountdownTimer = ({ className }: { className?: string }) => {
     if (interval === 'expired') return;
 
     const timeValue = timeLeft[interval] as number;
-    
+
     const formattedValue = String(timeValue).padStart(2, '0');
 
     timerComponents.push(
@@ -63,16 +63,19 @@ const CountdownTimer = ({ className }: { className?: string }) => {
 
   return (
     <section className={`py-10 ${className}`}>
+      <p className="mt-9 text-4xl font-bold text-center mb-5 text-orange-400">
+        Black Friday Wilgner Silva
+      </p>
       <div className="container mx-auto px-6 max-w-5xl text-center">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white mb-6 uppercase tracking-wider">
-          {timeLeft.expired ? 'OFERTA ENCERRADA' : 'A BLACK FRIDAY ACABA EM:'}
+          {timeLeft.expired ? 'OFERTA ENCERRADA' : 'A BLACK FRIDAY COMEÇARÁ EM:'}
         </h2>
         <div className="flex justify-center space-x-3 sm:space-x-4 md:space-x-6">
           {timerComponents.length ? timerComponents : (
             <p className="text-xl text-red-500 font-bold">O tempo expirou.</p>
           )}
         </div>
-        
+
         {!timeLeft.expired && (
           <div className="mt-8">
             <a
@@ -87,14 +90,11 @@ const CountdownTimer = ({ className }: { className?: string }) => {
               <FaWhatsapp className="w-10 h-10" />
               GARANTA SEU COMBO OU TIRE DÚVIDAS AGORA!
             </a>
-            <p className="mt-9 text-4xl font-bold text-orange-400">
-                Black Friday Wilgner Silva
-            </p>
           </div>
         )}
 
         {timeLeft.expired && (
-             <p className="mt-8 text-xl text-red-500 font-bold">O tempo expirou. A oferta exclusiva de R$697,00 não está mais disponível.</p>
+          <p className="mt-8 text-xl text-red-500 font-bold">O tempo expirou. A oferta exclusiva de R$697,00 não está mais disponível.</p>
         )}
       </div>
     </section>
