@@ -79,13 +79,16 @@ const CountdownTimer = ({ className }: { className?: string }) => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg shadow-xl transition-transform duration-300 transform hover:scale-[1.03] uppercase text-lg tracking-wider animate-bounce"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white 
+                                 px-10 py-4 rounded-lg font-bold text-lg 
+                                 hover:from-green-600 hover:to-emerald-700 
+                                 shadow-xl shadow-green-500/30 transition-all duration-300 transform hover:scale-[1.05]"
             >
-              <FaWhatsapp className="w-8 h-8" />
+              <FaWhatsapp className="w-10 h-10" />
               GARANTA SEU COMBO OU TIRE DÚVIDAS AGORA!
             </a>
-            <p className="mt-4 text-base font-bold text-yellow-400 animate-pulse">
-                Preço Exclusivo de R$697,00 — Não perca o desconto de 70%!
+            <p className="mt-9 text-4xl font-bold text-orange-400">
+                Black Friday Wilgner Silva
             </p>
           </div>
         )}
