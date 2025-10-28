@@ -24,7 +24,7 @@ const calculateTimeLeft = () => {
 const CountdownTimer = ({ className }: { className?: string }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  const WHATSAPP_LINK = "https://chat.whatsapp.com/CehwexWdYgBIpT5epzemsR?mode=wwt";
+  const WHATSAPP_LINK = "https://chat.whatsapp.com/CehwexWdYgBIpT5epzemsR";
 
   useEffect(() => {
     if (timeLeft.expired) return;
@@ -80,8 +80,6 @@ const CountdownTimer = ({ className }: { className?: string }) => {
           <div className="mt-8">
             <a
               href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white 
                                  px-10 py-4 rounded-lg font-bold text-lg 
                                  hover:from-green-600 hover:to-emerald-700 
