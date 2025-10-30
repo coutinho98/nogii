@@ -21,10 +21,12 @@ const calculateTimeLeft = () => {
   return timeLeft;
 };
 
+
 const CountdownTimer = ({ className }: { className?: string }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  const WHATSAPP_LINK = "https://chat.whatsapp.com/CehwexWdYgBIpT5epzemsR";
+  const GROUP_CODE = "CehwexWdYgBIpT5epzemsR"; 
+  const WHATSAPP_LINK = `https://chat.whatsapp.com/${GROUP_CODE}`;
 
   useEffect(() => {
     if (timeLeft.expired) return;
@@ -40,13 +42,28 @@ const CountdownTimer = ({ className }: { className?: string }) => {
     return () => clearInterval(timer);
   }, [timeLeft.expired]);
 
+  const handleWhatsappClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault(); 
+    
+    const userAgent = navigator.userAgent;
+    const isAndroid = /Android/i.test(userAgent);
+    const isInApp = /(Instagram|FBAN|FBAV|FB_IAB|Messenger)/i.test(userAgent);
+    
+    const intentUrl = `intent://chat.whatsapp.com/${GROUP_CODE}#Intent;scheme=https;package=com.whatsapp;end`;
+
+    if (isAndroid && isInApp) {
+        window.location.href = intentUrl;
+    } else {
+        window.location.href = WHATSAPP_LINK;
+    }
+  };
+
   const timerComponents: JSX.Element[] = [];
 
   (Object.keys(timeLeft) as (keyof typeof timeLeft)[]).forEach((interval) => {
     if (interval === 'expired') return;
 
     const timeValue = timeLeft[interval] as number;
-
     const formattedValue = String(timeValue).padStart(2, '0');
 
     timerComponents.push(
@@ -79,14 +96,17 @@ const CountdownTimer = ({ className }: { className?: string }) => {
         {!timeLeft.expired && (
           <div className="mt-8">
             <a
-              href={WHATSAPP_LINK}
+              href={WHATSAPP_LINK} 
+              onClick={handleWhatsappClick}
+              target="_blank" 
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white 
-                                 px-10 py-4 rounded-lg font-bold text-lg 
-                                 hover:from-green-600 hover:to-emerald-700 
-                                 shadow-xl shadow-green-500/30 transition-all duration-300 transform hover:scale-[1.05]"
+                           px-10 py-4 rounded-lg font-bold text-lg 
+                           hover:from-green-600 hover:to-emerald-700 
+                           shadow-xl shadow-green-500/30 transition-all duration-300 transform hover:scale-[1.05]"
             >
               <FaWhatsapp className="w-10 h-10" />
-              GARANTA SEU COMBO OU TIRE DÚVIDAS AGORA!
+              Entre para o grupo de WhatsApp
             </a>
           </div>
         )}
