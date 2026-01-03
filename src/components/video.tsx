@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import ThemeSwitcher from './ThemeSwitcher';
-import LanguageSwitcher from './LanguageSwitcher';
 
 const VideoSection = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
@@ -9,8 +7,6 @@ const VideoSection = ({ className }: { className?: string }) => {
     <section className={`py-10 relative ${className}`}>
       <div className="relative">
         <div className="absolute right-2  z-[9999] flex flex-col items-center space-y-1">
-          <ThemeSwitcher />
-          <LanguageSwitcher />
         </div>
 
         <div className="container mx-auto px-6">
