@@ -73,11 +73,11 @@ const PricingSection = ({ className }: { className?: string }) => {
     installmentsPrice = 20.37;
     fullPrice = 197;
   } else if (lang === 'en') {
-    productUrl = "https://pay.hotmart.com/D100922357U";
+    productUrl = "https://pay.hotmart.com/D100922357U?checkoutMode=10";
     installmentsPrice = 47;
     fullPrice = 47;
   } else if (lang === 'es') {
-    productUrl = "https://pay.hotmart.com/O100799323A";
+    productUrl = "https://pay.hotmart.com/O100799323A?checkoutMode=10";
     installmentsPrice = 47;
     fullPrice = 47;
   }
