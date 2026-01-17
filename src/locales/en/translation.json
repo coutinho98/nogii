@@ -109,7 +109,11 @@
     },
     "module6": {
       "title": "BONUS",
-      "description": "The techniques that few know and even fewer master. This bonus module reveals elite movements that combine wrestling with judo, advanced defenses against submissions, and spectacular takedowns that leave opponents speechless. They are the trump cards that turn good fighters into unbeatable ones."
+      "description": "Techniques that few know and even fewer master. This bonus module reveals elite movements that combine wrestling with judo, advanced submission defenses, and spectacular takedowns that leave opponents speechless. These are the hidden aces that transform good fighters into unbeatable ones.",
+      "bonus_exclusive_tag": "🚀 EXCLUSIVE",
+      "bonus_subtitle": "Career Upgrade",
+      "bonus_access_info": "Available immediately after purchase",
+      "pricing_lifetime_access": "Lifetime Access"
     }
   },
   "pricing_section": {
@@ -436,5 +440,81 @@
         ]
       }
     ]
+  },
+  "course_cards": {
+    "instructor": "Instructor",
+    "buy": "Buy",
+    "buy_now": "Buy now!",
+    "list_price": "List Price",
+    "exclusive_combo_price": "Exclusive Combo Price",
+    "combo_title": "Complete Combo",
+    "combo_subtitle": "All {{name}}'s Courses",
+    "combo_description": "Get immediate access to over 15 Wrestling courses and workshops for Jiu-Jitsu, MMA, and career development. Master the standing fight, advanced defenses, and all attacking positions, from basic to advanced, with the Brazilian Champion's methodology.",
+    "card_description": "Learn essential techniques and advanced strategies to take your grappling performance to the next level.",
+    "names": {
+      "wrestling_bjj": "Wrestling for Jiu-Jitsu: Basic to Advanced",
+      "wrestling_gi": "Wrestling Gi",
+      "wrestling_strength": "Wrestlers' Strength",
+      "drill_genius": "Drill Genius - Wrestling",
+      "wrestling_mma": "Wrestling for MMA: Total opponent control",
+      "double_leg": "Double Leg",
+      "wrestling_kids": "Wrestling Kids Workshop",
+      "bodylock_suplex": "Bodylock and Suplex - Advanced",
+      "neck_defenses": "Neck Defenses Masterclass",
+      "neck_attack": "Neck Attack",
+      "arm_drag": "Arm Drag - Advanced",
+      "underhook_overhook": "Underhook and Overhook - Advanced",
+      "english_bjj": "English for BJJ",
+      "leg_attacks": "Leg Attacks: Heelhook, Leglock, Footlock and more",
+      "insta_fighters": "Insta Pro Fighters"
+    },
+    "tags": {
+      "basic_advanced": "Basic to Advanced",
+      "training": "Training",
+      "control": "Control",
+      "seminar": "Seminar",
+      "takedowns": "Takedowns",
+      "methodology": "Methodology",
+      "technique": "Technique",
+      "defenses": "Defenses",
+      "headlocks": "Headlocks",
+      "career": "Career",
+      "submissions": "Submissions",
+      "marketing": "Marketing",
+      "growth": "Growth"
+    },
+    "links": {
+      "wrestling_bjj": "https://pay.hotmart.com/D100922357U",
+      "wrestling_gi": "https://pay.hotmart.com/D103570357Y",
+      "wrestling_strength": "https://pay.hotmart.com/V103566434R",
+      "drill_genius": "https://pay.hotmart.com/G103559026A",
+      "wrestling_mma": "https://pay.hotmart.com/E85358370T",
+      "double_leg": "https://pay.hotmart.com/S103656207O",
+      "wrestling_kids": "https://pay.hotmart.com/F103696804Y",
+      "bodylock_suplex": "https://pay.hotmart.com/K103680006Q",
+      "neck_defenses": "https://pay.hotmart.com/D103703311Q",
+      "neck_attack": "https://pay.hotmart.com/D103703311Q",
+      "arm_drag": "https://pay.hotmart.com/N103703835V",
+      "underhook_overhook": "https://pay.hotmart.com/Q103793893H",
+      "leg_attacks": "https://pay.hotmart.com/N103665149M",
+      "english_bjj": "https://pay.kiwify.com.br/dvbphPo",
+      "insta_fighters": "https://pay.kiwify.com.br/g5J3Tbe"
+    },
+    "prices": {
+      "tier_1": "US$ 47.00",
+      "tier_2": "US$ 27.00",
+      "tier_3": "US$ 17.00",
+      "tier_4": "US$ 17.00",
+      "tier_5": "US$ 37.00",
+      "tier_6": "US$ 37.00",
+      "tier_7": "US$ 17.00",
+      "tier_8": "US$ 37.00"
+    }
+  },
+  "fighter_bio_section": {
+    "name": "Wilgner Silva",
+    "subtitle": "2018 Brazilian champion and one of the greatest references in National Wrestling.",
+    "description": "Professor for several top Jiu-Jitsu athletes, with a methodology focused on <1>rapid evolution and notable results.</1>",
+    "courses_anchor": "Know my courses"
   }
 }

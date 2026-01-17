@@ -59,7 +59,11 @@ const CourseModulesSection = ({ className }: { className?: string }) => {
         image: Bonus,
         title: t('course_modules.module6.title'),
         description: t('course_modules.module6.description'),
-        alt: "Imagem do Módulo de Bônus"
+        bonus_subtitle: t('course_modules.module6.bonus_subtitle'),
+        alt: "Imagem do Módulo de Bônus",
+        bonus_exclusive_tag: t('course_modules.module6.bonus_exclusive_tag'),
+        pricing_lifetime_access: t('course_modules.module6.pricing_lifetime_access'),
+        bonus_access_info: t('course_modules.module6.bonus_access_info'),
     };
 
     const regularModules = modules.slice(0, 5);
@@ -100,9 +104,9 @@ const CourseModulesSection = ({ className }: { className?: string }) => {
 
                                 <div className="w-full md:w-2/5 relative">
                                     <div className="absolute -top-6 -left-6 bg-yellow-500 text-black px-6 py-2 rounded-full font-black text-sm uppercase tracking-tighter shadow-[0_0_20px_rgba(234,88,12,0.5)] z-20">
-                                        🚀 Exclusivo
+                                        {bonusModule.bonus_exclusive_tag}
                                     </div>
-                                    <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl transform transition-transform duration-500">
+                                    <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl transform transition-transform duration-500 group-hover:scale-105">
                                         <img
                                             src={bonusModule.image}
                                             alt={bonusModule.alt}
@@ -110,9 +114,10 @@ const CourseModulesSection = ({ className }: { className?: string }) => {
                                         />
                                     </div>
                                 </div>
+
                                 <div className="w-full md:w-3/5 text-left relative z-10">
                                     <span className="text-orange-500 font-black tracking-[0.2em] uppercase text-sm">
-                                        Upgrade de Carreira
+                                        {bonusModule.bonus_subtitle}
                                     </span>
                                     <h3 className="text-4xl md:text-5xl font-black text-white mt-2 mb-6 tracking-tighter italic uppercase leading-none">
                                         {bonusModule.title}
@@ -122,12 +127,16 @@ const CourseModulesSection = ({ className }: { className?: string }) => {
                                     </p>
 
                                     <div className="inline-flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-                                        <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center text-2xl shadow-[0_0_15px_rgba(234,88,12,0.4)]">
+                                        <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center text-2xl shadow-[0_0_15_px_rgba(234,88,12,0.4)]">
                                             🎁
                                         </div>
                                         <div>
-                                            <p className="text-white font-bold text-sm leading-none">Acesso Vitalício</p>
-                                            <p className="text-zinc-500 text-xs mt-1">Disponível imediatamente após a compra</p>
+                                            <p className="text-white font-bold text-sm leading-none">
+                                                {bonusModule.pricing_lifetime_access}
+                                            </p>
+                                            <p className="text-zinc-500 text-xs mt-1">
+                                                {bonusModule.bonus_access_info}`
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

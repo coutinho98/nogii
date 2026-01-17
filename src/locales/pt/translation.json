@@ -109,7 +109,11 @@
         },
         "module6": {
             "title": "BÔNUS",
-            "description": "As técnicas que poucos conhecem e ainda menos dominam. Este módulo bônus revela movimentos de elite que combinam wrestling com judô, defesas avançadas contra finalizações e quedas espetaculares que deixam adversários sem reação. São as cartas na manga que transformam bons lutadores em imbatíveis."
+            "description": "As técnicas que poucos conhecem e ainda menos dominam. Este módulo bônus revela movimentos de elite que combinam wrestling com judô, defesas avançadas contra finalizações e quedas espetaculares que deixam adversários sem reação. São as cartas na manga que transformam bons lutadores em imbatíveis.",
+            "bonus_exclusive_tag": "🚀 EXCLUSIVO",
+            "bonus_subtitle": "Upgrade de Carreira",
+            "bonus_access_info": "Disponível imediatamente após a compra",
+            "pricing_lifetime_access": "Acesso Vitalício"
         }
     },
     "pricing_section": {
@@ -331,5 +335,76 @@
                 ]
             }
         ]
+    },
+    "course_cards": {
+        "instructor": "Instrutor",
+        "buy": "Comprar",
+        "buy_now": "Compre agora!",
+        "list_price": "Preço de Tabela",
+        "exclusive_combo_price": "Preço Combo Exclusivo",
+        "combo_title": "Combo Completo",
+        "combo_subtitle": "Todos os Cursos de {{name}}",
+        "combo_description": "Tenha acesso imediato a mais de 15 cursos e workshops de Wrestling para Jiu-Jitsu, MMA e desenvolvimento de carreira. Domine a luta em pé, as defesas mais avançadas e todas as posições de ataque, do básico ao avançado, com a metodologia do Campeão Brasileiro.",
+        "card_description": "Aprenda as técnicas essenciais e estratégias avançadas para levar sua performance de grappling para o próximo nível.",
+        "names": {
+            "wrestling_bjj": "Wrestling para Jiu-Jitsu do Básico ao Avançado",
+            "wrestling_gi": "Wrestling Gi",
+            "wrestling_strength": "Força dos Wrestlers",
+            "drill_genius": "Gênio dos Drills - Wrestling",
+            "wrestling_mma": "Wrestling para o MMA: total controle sobre o adversário",
+            "double_leg": "Double Leg",
+            "wrestling_kids": "Workshop Wrestling Kids",
+            "bodylock_suplex": "Bodylock e Suplex - Avançado",
+            "neck_defenses": "Masterclass Defesas de Pescoço",
+            "neck_attack": "Ataque de Pescoço",
+            "arm_drag": "Arm Drag - Avançado",
+            "underhook_overhook": "Underhook e Overhook - Avançado",
+            "english_bjj": "Inglês para o BJJ",
+            "leg_attacks": "Ataques de Perna: Heelhook, Leglock, Footlock e muito mais",
+            "insta_fighters": "Insta Pro Fighters"
+        },
+        "tags": {
+            "basic_advanced": "Básico ao Avançado",
+            "training": "Treino",
+            "control": "Controle",
+            "seminar": "Seminário",
+            "takedowns": "Quedas",
+            "methodology": "Metodologia",
+            "technique": "Técnica",
+            "defenses": "Defesas",
+            "headlocks": "Headlocks",
+            "career": "Carreira",
+            "submissions": "Finalização",
+            "marketing": "Marketing",
+            "growth": "Crescimento"
+        },
+        "links": {
+            "wrestling_bjj": "https://pay.hotmart.com/D100922357U",
+            "wrestling_gi": "https://pay.hotmart.com/D103570357Y",
+            "wrestling_strength": "https://pay.hotmart.com/V103566434R",
+            "drill_genius": "https://pay.hotmart.com/G103559026A",
+            "wrestling_mma": "https://pay.hotmart.com/E85358370T",
+            "double_leg": "https://pay.hotmart.com/S103656207O",
+            "wrestling_kids": "https://pay.hotmart.com/F103696804Y",
+            "bodylock_suplex": "https://pay.hotmart.com/K103680006Q",
+            "neck_defenses": "https://pay.hotmart.com/D103703311Q",
+            "neck_attack": "https://pay.hotmart.com/D103703311Q",
+            "arm_drag": "https://pay.hotmart.com/N103703835V",
+            "underhook_overhook": "https://pay.hotmart.com/Q103793893H",
+            "leg_attacks": "https://pay.hotmart.com/N103665149M",
+            "english_bjj": "https://pay.kiwify.com.br/dvbphPo",
+            "insta_fighters": "https://pay.kiwify.com.br/g5J3Tbe"
+        },
+        "prices": {
+            "tier_1": "R$ 197,00",
+            "tier_2": "R$ 97,00",
+            "tier_3": "R$ 147,00"
+        }
+    },
+    "fighter_bio_section": {
+        "name": "Wilgner Silva",
+        "subtitle": "Campeão brasileiro em 2018 e uma das maiores referências no Wrestling Nacional.",
+        "description": "Professor de diversos atletas de ponta no Jiu-Jítsu, com uma didática focada na <1>evolução rápida e resultados notórios.</1>",
+        "courses_anchor": "Conheça meus cursos"
     }
 }
